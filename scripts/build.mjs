@@ -59,10 +59,10 @@ for(const company of companies){
  await fs.writeFile(path.join(directory,'index.html'),renderCompany(template,company,options));
 
 }
-// Canonical HTML fallbacks also work on static hosts without _redirects support.
-const movedPages=[['powered-by','/use-cases/']];
+// Preserve consolidated company aliases inside the canonical use-cases section.
+// The retired section is handled by _redirects, without generating a second tree.
+const movedPages=[];
 for(const c of companies){
- for(const previous of [c.slug,...(c.previousSlugs||[])])movedPages.push([`powered-by/${previous}`,`/use-cases/${c.slug}/`]);
  for(const previous of c.previousSlugs||[])movedPages.push([`use-cases/${previous}`,`/use-cases/${c.slug}/`]);
 }
 for(const [previous,destination] of movedPages){

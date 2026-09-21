@@ -8,7 +8,7 @@ async function htmlFiles(directory){
  const entries=await fs.readdir(directory,{withFileTypes:true,recursive:true}).catch(error=>{if(error.code==='ENOENT')return [];throw error;});
  return entries.filter(entry=>entry.isFile()&&entry.name.endsWith('.html')).map(entry=>path.relative(root,path.join(entry.parentPath,entry.name)));
 }
-for(const directory of ['use-cases','powered-by']){
+for(const directory of ['use-cases']){
  const built=await htmlFiles(path.join(root,'dist',directory));
  generated.push(...built.map(file=>file.slice('dist/'.length)));
  for(const existing of await htmlFiles(path.join(root,directory))){

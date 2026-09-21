@@ -8,7 +8,5 @@ exclude:
   - package.json
   - site.config.json
   - README.md
-  - INTEGRATION.md
-  - QUALITY.md
   - .openai
   - .sites-runtime

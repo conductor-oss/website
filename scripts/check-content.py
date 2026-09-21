@@ -71,6 +71,7 @@ assert len(ET.parse(DIST / 'sitemap.xml').getroot()) == len(companies) + 2
 for file in ('robots.txt',):
     assert (DIST / file).exists(), file
 assert not (DIST / 'data').exists(), 'Build-time data must not be published'
+assert not (DIST / 'powered-by').exists(), 'The generated section must live only under use-cases'
 assert not list(DIST.rglob('*.json')), 'No downloadable JSON files'
 assert not list((DIST / 'use-cases').rglob('*.md')), 'No downloadable Markdown files'
 assert not (DIST / 'llms.txt').exists() and not (DIST / 'llms-full.txt').exists()
