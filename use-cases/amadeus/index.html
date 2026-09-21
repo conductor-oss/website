@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Amadeus Conductor Use Cases | Workflow Orchestration</title><meta name="description" content="Explore Amadeus Conductor use cases: product implementation and configuration; revenue accounting batch processing; reusable workers and workflow tracing; shared…"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://conductor-oss.org/use-cases/amadeus/"><meta property="og:type" content="website"><meta property="og:site_name" content="Conductor"><meta property="og:title" content="Amadeus Conductor Use Cases | Workflow Orchestration"><meta property="og:description" content="Explore Amadeus Conductor use cases: product implementation and configuration; revenue accounting batch processing; reusable workers and workflow tracing; shared…"><meta property="og:url" content="https://conductor-oss.org/use-cases/amadeus/"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Amadeus Conductor Use Cases | Workflow Orchestration"><meta name="twitter:description" content="Explore Amadeus Conductor use cases: product implementation and configuration; revenue accounting batch processing; reusable workers and workflow tracing; shared…"><link rel="icon" href="/assets/icon-conductor-mark.svg" type="image/svg+xml"><link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/site.css?v=516614f1b720"><link rel="stylesheet" href="/use-cases/directory.css?v=516614f1b720"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://conductor-oss.org/use-cases/amadeus/","url":"https://conductor-oss.org/use-cases/amadeus/","name":"Amadeus Conductor Use Cases | Workflow Orchestration","description":"Explore Amadeus Conductor use cases: product implementation and configuration; revenue accounting batch processing; reusable workers and workflow tracing; shared…","inLanguage":"en","about":{"@type":"Organization","name":"Amadeus","logo":"https://conductor-oss.org/assets/companies/amadeus.webp"},"keywords":["Travel and Hospitality","Infrastructure Lifecycle","Data Pipelines and Analytics","Software Delivery"],"isPartOf":{"@id":"https://conductor-oss.org/use-cases/"},"breadcrumb":{"@id":"https://conductor-oss.org/use-cases/amadeus/#breadcrumb"},"mainEntity":{"@type":"ItemList","numberOfItems":4,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/amadeus/#product-implementation-and-configuration","url":"https://conductor-oss.org/use-cases/amadeus/#product-implementation-and-configuration","name":"Product implementation and configuration","description":"Amadeus’ Maestro engine is built on Conductor to automate product implementation, configuration and deployment. Workflows manage travel-agency offices, users and product settings, adapting each implementation to the requirements of its market and customer. Teams define and monitor workflows through the Amadeus Configuration Platform, with workers connecting the systems and services involved.","keywords":["Infrastructure Lifecycle"]}},{"@type":"ListItem","position":2,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/amadeus/#revenue-accounting-batch-processing","url":"https://conductor-oss.org/use-cases/amadeus/#revenue-accounting-batch-processing","name":"Revenue accounting batch processing","description":"A Conductor-based batch framework coordinates critical data flows within airline revenue accounting. Recoverable workflow execution manages dependent processing stages and provides a shared structure for running accounting data jobs.","keywords":["Data Pipelines and Analytics"]}},{"@type":"ListItem","position":3,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/amadeus/#reusable-workers-and-workflow-tracing","url":"https://conductor-oss.org/use-cases/amadeus/#reusable-workers-and-workflow-tracing","name":"Reusable workers and workflow tracing","description":"Conductor worker libraries and distributed tracing support Amadeus workflow applications. A Go worker SDK simplifies service integration, while OpenTelemetry and Tempo make execution paths visible in the Maestro orchestration platform.","keywords":["Software Delivery"]}},{"@type":"ListItem","position":4,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/amadeus/#shared-action-orchestration","url":"https://conductor-oss.org/use-cases/amadeus/#shared-action-orchestration","name":"Shared action orchestration","description":"Amadeus engineers built a shared action orchestrator with Conductor, connecting reusable actions and low-code workflow creation within a common execution framework.","keywords":["Software Delivery"]}}]}},{"@type":"BreadcrumbList","@id":"https://conductor-oss.org/use-cases/amadeus/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Conductor Use Cases","item":"https://conductor-oss.org/use-cases/"},{"@type":"ListItem","position":2,"name":"Amadeus","item":"https://conductor-oss.org/use-cases/amadeus/"}]}]}</script></head><body><a class="skip-link" href="#main-content">Skip to content</a><nav class="nav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo" aria-label="Conductor OSS home">
+          <img
+            class="logo-img"
+            src="/assets/logo-conductor.webp" width="440" height="94"
+            alt="Conductor"
+          />
+        </a>
+
+        <div class="nav-links"><a class="nav-link current" href="/use-cases/" aria-current="page">Use Cases</a>
+          <a
+            class="nav-link"
+            href="https://docs.conductor-oss.org/index.html"
+            target="_blank"
+            >Docs</a
+          >
+          <a
+            class="nav-link"
+            href="https://docs.conductor-oss.org/quickstart/index.html"
+            target="_blank"
+            >Quickstart</a
+          >
+          <a
+            class="nav-link"
+            href="https://github.com/conductor-oss/conductor"
+            target="_blank"
+            >Github</a
+          >
+        </div>
+
+        <div class="nav-right">
+          <a
+            class="nav-community"
+            href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+            target="_blank"
+          >
+            <img src="/assets/icon-slack-nav.svg" alt="" />
+            Community
+          </a>
+
+
+
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle colour theme"
+          >
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+
+          <button class="btn btn-blue nav-contribute" id="open-modal">
+            <img src="/assets/icon-contribute.svg" alt="" />
+            <span>Contribute</span>
+          </button>
+
+          <button
+            class="burger"
+            id="burger"
+            aria-label="Menu" aria-controls="nav-drawer"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-drawer" id="nav-drawer"><a href="/use-cases/">Conductor Use Cases</a>
+      <a href="https://docs.conductor-oss.org/index.html" target="_blank"
+        >Docs</a
+      >
+      <a
+        href="https://docs.conductor-oss.org/quickstart/index.html"
+        target="_blank"
+        >Quickstart</a
+      >
+      <a href="https://github.com/conductor-oss/conductor" target="_blank"
+        >Github</a
+      >
+      <a
+        href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+        target="_blank"
+        >Community</a
+      >
+    </div><main class="use-cases-page" id="main-content"><article class="company-page"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/use-cases/">All companies</a><span aria-hidden="true">/</span><span aria-current="page">Amadeus</span></nav><header class="company-hero"><div class="brand-area"><img src="/assets/companies/amadeus.webp" alt="Amadeus logo" width="480" height="95" loading="eager" fetchpriority="high" decoding="async" class="brand-wide"></div><p class="company-industry">Travel and Hospitality</p><h1>Amadeus<span>Conductor use cases</span></h1><p class="company-intro">Amadeus’ Maestro engine is built on Conductor to automate product implementation, configuration and deployment.</p><ul class="company-topics" aria-label="Use-case categories"><li><a href="/use-cases/?category=Infrastructure%20Lifecycle">Infrastructure Lifecycle</a></li><li><a href="/use-cases/?category=Data%20Pipelines%20and%20Analytics">Data Pipelines and Analytics</a></li><li><a href="/use-cases/?category=Software%20Delivery">Software Delivery</a></li></ul></header><nav class="case-contents" aria-labelledby="contents-title"><h2 id="contents-title">Explore 4 use cases</h2><ol><li><a href="#product-implementation-and-configuration">Product implementation and configuration</a></li><li><a href="#revenue-accounting-batch-processing">Revenue accounting batch processing</a></li><li><a href="#reusable-workers-and-workflow-tracing">Reusable workers and workflow tracing</a></li><li><a href="#shared-action-orchestration">Shared action orchestration</a></li></ol></nav><div class="company-cases"><section class="case-detail" id="product-implementation-and-configuration" aria-labelledby="product-implementation-and-configuration-title"><span class="anchor-alias" id="use-case-1" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Infrastructure Lifecycle</p></div><h2 id="product-implementation-and-configuration-title">Product implementation and configuration</h2><p>Amadeus’ Maestro engine is built on Conductor to automate product implementation, configuration and deployment. Workflows manage travel-agency offices, users and product settings, adapting each implementation to the requirements of its market and customer. Teams define and monitor workflows through the Amadeus Configuration Platform, with workers connecting the systems and services involved.</p></section><section class="case-detail" id="revenue-accounting-batch-processing" aria-labelledby="revenue-accounting-batch-processing-title"><span class="anchor-alias" id="use-case-2" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Data Pipelines and Analytics</p></div><h2 id="revenue-accounting-batch-processing-title">Revenue accounting batch processing</h2><p>A Conductor-based batch framework coordinates critical data flows within airline revenue accounting. Recoverable workflow execution manages dependent processing stages and provides a shared structure for running accounting data jobs.</p></section><section class="case-detail" id="reusable-workers-and-workflow-tracing" aria-labelledby="reusable-workers-and-workflow-tracing-title"><span class="anchor-alias" id="use-case-3" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Software Delivery</p></div><h2 id="reusable-workers-and-workflow-tracing-title">Reusable workers and workflow tracing</h2><p>Conductor worker libraries and distributed tracing support Amadeus workflow applications. A Go worker SDK simplifies service integration, while OpenTelemetry and Tempo make execution paths visible in the Maestro orchestration platform.</p></section><section class="case-detail" id="shared-action-orchestration" aria-labelledby="shared-action-orchestration-title"><span class="anchor-alias" id="use-case-4" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Software Delivery</p></div><h2 id="shared-action-orchestration-title">Shared action orchestration</h2><p>Amadeus engineers built a shared action orchestrator with Conductor, connecting reusable actions and low-code workflow creation within a common execution framework.</p></section></div><aside class="company-next" aria-label="Related resources"><a class="related-pattern" href="https://docs.conductor-oss.org/devguide/cookbook/microservice-orchestration.html">Explore related Conductor patterns <span aria-hidden="true">→</span></a></aside><a class="back-link" href="/use-cases/">← Explore all companies</a></article></main><footer class="footer">
+      <div class="wrap">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <img
+              class="footer-logo logo-img"
+              src="/assets/logo-conductor.webp" width="440" height="94"
+              alt="Conductor"
+            />
+            <p class="footer-tagline">
+              Open Source Workflow and Agent Orchestration Platform
+            </p>
+            <p class="footer-copy">
+              Copyright 2026 © Conductor OSS Contributors
+            </p>
+          </div>
+
+          <div class="footer-cols">
+            <div class="footer-col">
+              <div class="footer-col-head">Resources</div>
+              <a
+                href="https://docs.conductor-oss.org/index.html"
+                target="_blank"
+                >Docs</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/releases"
+                target="_blank"
+                >Releases</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/security/policy"
+                target="_blank"
+                >Security</a
+              >
+              <a href="https://orkes.io/privacy-policy" target="_blank"
+                >Privacy Policy</a
+              >
+              <a href="https://orkes.io/legal" target="_blank">Terms of Use</a>
+            </div>
+            <div class="footer-col">
+              <div class="footer-col-head">Community</div>
+              <a
+                href="https://github.com/conductor-oss/conductor"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/discussions"
+                target="_blank"
+                >Discussions</a
+              >
+              <a
+                href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+                target="_blank"
+                >Slack</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/blob/main/CONTRIBUTING.md"
+                target="_blank"
+                >Contributing</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-end">
+          Originally created at Netflix. Maintained in the open by the Conductor
+          OSS community.
+        </div>
+      </div>
+    </footer><div
+      class="modal-bg"
+      id="modal-bg"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <div class="modal">
+        <button class="modal-x" id="modal-x" aria-label="Close">&times;</button>
+        <h2 class="modal-title" id="modal-title">Get Involved</h2>
+        <p class="modal-copy">
+          Conductor is maintained in the open. Use the links below to contribute
+          code, ask questions, report issues, or review project policies.
+        </p>
+        <div class="modal-links">
+          <a
+            class="modal-link"
+            href="https://github.com/conductor-oss/conductor/blob/main/CONTRIBUTING.md"
+            target="_blank"
+          >
+            <span>
+              <strong>Contributing Guide</strong>
+              <span
+                >Development workflow, pull requests, and contribution
+                guidelines.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+          <a
+            class="modal-link"
+            href="https://github.com/conductor-oss/conductor/discussions"
+            target="_blank"
+          >
+            <span>
+              <strong>GitHub Discussions</strong>
+              <span
+                >Ask questions, propose ideas, and share patterns with the
+                community.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+          <a
+            class="modal-link"
+            href="https://github.com/conductor-oss/conductor/security/policy"
+            target="_blank"
+          >
+            <span>
+              <strong>Security Policy</strong>
+              <span
+                >Review the vulnerability reporting policy and security contact
+                path.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+          <a
+            class="modal-link"
+            href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+            target="_blank"
+          >
+            <span>
+              <strong>Slack Community</strong>
+              <span
+                >Join the public community chat for support and project
+                discussion.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div><script src="/assets/site.js?v=516614f1b720" defer></script></body></html>

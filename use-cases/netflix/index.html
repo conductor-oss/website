@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Netflix Conductor Use Cases | Workflow Orchestration</title><meta name="description" content="Explore Netflix Conductor use cases: studio media processing; advertising creative ingestion; advertiser certificate management; data clean room lifecycle; game…"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://conductor-oss.org/use-cases/netflix/"><meta property="og:type" content="website"><meta property="og:site_name" content="Conductor"><meta property="og:title" content="Netflix Conductor Use Cases | Workflow Orchestration"><meta property="og:description" content="Explore Netflix Conductor use cases: studio media processing; advertising creative ingestion; advertiser certificate management; data clean room lifecycle; game…"><meta property="og:url" content="https://conductor-oss.org/use-cases/netflix/"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Netflix Conductor Use Cases | Workflow Orchestration"><meta name="twitter:description" content="Explore Netflix Conductor use cases: studio media processing; advertising creative ingestion; advertiser certificate management; data clean room lifecycle; game…"><link rel="icon" href="/assets/icon-conductor-mark.svg" type="image/svg+xml"><link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/site.css?v=516614f1b720"><link rel="stylesheet" href="/use-cases/directory.css?v=516614f1b720"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://conductor-oss.org/use-cases/netflix/","url":"https://conductor-oss.org/use-cases/netflix/","name":"Netflix Conductor Use Cases | Workflow Orchestration","description":"Explore Netflix Conductor use cases: studio media processing; advertising creative ingestion; advertiser certificate management; data clean room lifecycle; game…","inLanguage":"en","about":{"@type":"Organization","name":"Netflix","logo":"https://conductor-oss.org/assets/companies/netflix.webp"},"keywords":["Media and Entertainment","Document and Content Processing","Marketing and Sales Operations","Risk and Compliance","Data Integration","Software Delivery","Process Automation"],"isPartOf":{"@id":"https://conductor-oss.org/use-cases/"},"breadcrumb":{"@id":"https://conductor-oss.org/use-cases/netflix/#breadcrumb"},"mainEntity":{"@type":"ItemList","numberOfItems":7,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/netflix/#studio-media-processing","url":"https://conductor-oss.org/use-cases/netflix/#studio-media-processing","name":"Studio media processing","description":"Netflix uses its internal Conductor platform to coordinate footage ingestion, validation and transcoding, connecting dailies, visual-effects pulls and conform pulls with studio production workflows.","keywords":["Document and Content Processing"]}},{"@type":"ListItem","position":2,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/netflix/#advertising-creative-ingestion","url":"https://conductor-oss.org/use-cases/netflix/#advertising-creative-ingestion","name":"Advertising creative ingestion","description":"Conductor coordinates advertising-creative ingestion, sequencing processing for each creative and managing branching workflows across the services involved.","keywords":["Marketing and Sales Operations"]}},{"@type":"ListItem","position":3,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/netflix/#advertiser-certificate-management","url":"https://conductor-oss.org/use-cases/netflix/#advertiser-certificate-management","name":"Advertiser certificate management","description":"Conductor coordinates advertiser-certificate workflows, connecting integrations with downstream actions when certificates expire.","keywords":["Risk and Compliance"]}},{"@type":"ListItem","position":4,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/netflix/#data-clean-room-lifecycle","url":"https://conductor-oss.org/use-cases/netflix/#data-clean-room-lifecycle","name":"Data clean room lifecycle","description":"Conductor manages the lifecycle of data clean rooms, coordinating provisioning, partner participation, activation and archival for joint analysis.","keywords":["Data Integration"]}},{"@type":"ListItem","position":5,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/netflix/#game-distribution","url":"https://conductor-oss.org/use-cases/netflix/#game-distribution","name":"Game distribution","description":"Conductor coordinates partner game builds from ingestion and validation through app-store publishing, including processing associated with iOS privacy manifests.","keywords":["Software Delivery"]}},{"@type":"ListItem","position":6,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/netflix/#promotional-artwork-production","url":"https://conductor-oss.org/use-cases/netflix/#promotional-artwork-production","name":"Promotional artwork production","description":"Conductor coordinates candidate-image selection, processing and review for promotional artwork. The workflow connects video assets with image preparation and title placement, then brings producers into the approval process.","keywords":["Document and Content Processing"]}},{"@type":"ListItem","position":7,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/netflix/#self-service-business-workflows","url":"https://conductor-oss.org/use-cases/netflix/#self-service-business-workflows","name":"Self service business workflows","description":"Netflix’s finance engineering team built tooling around Conductor so other teams could create and share workflows that connect people and automated services.","keywords":["Process Automation"]}}]}},{"@type":"BreadcrumbList","@id":"https://conductor-oss.org/use-cases/netflix/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Conductor Use Cases","item":"https://conductor-oss.org/use-cases/"},{"@type":"ListItem","position":2,"name":"Netflix","item":"https://conductor-oss.org/use-cases/netflix/"}]}]}</script></head><body><a class="skip-link" href="#main-content">Skip to content</a><nav class="nav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo" aria-label="Conductor OSS home">
+          <img
+            class="logo-img"
+            src="/assets/logo-conductor.webp" width="440" height="94"
+            alt="Conductor"
+          />
+        </a>
+
+        <div class="nav-links"><a class="nav-link current" href="/use-cases/" aria-current="page">Use Cases</a>
+          <a
+            class="nav-link"
+            href="https://docs.conductor-oss.org/index.html"
+            target="_blank"
+            >Docs</a
+          >
+          <a
+            class="nav-link"
+            href="https://docs.conductor-oss.org/quickstart/index.html"
+            target="_blank"
+            >Quickstart</a
+          >
+          <a
+            class="nav-link"
+            href="https://github.com/conductor-oss/conductor"
+            target="_blank"
+            >Github</a
+          >
+        </div>
+
+        <div class="nav-right">
+          <a
+            class="nav-community"
+            href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+            target="_blank"
+          >
+            <img src="/assets/icon-slack-nav.svg" alt="" />
+            Community
+          </a>
+
+
+
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle colour theme"
+          >
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+
+          <button class="btn btn-blue nav-contribute" id="open-modal">
+            <img src="/assets/icon-contribute.svg" alt="" />
+            <span>Contribute</span>
+          </button>
+
+          <button
+            class="burger"
+            id="burger"
+            aria-label="Menu" aria-controls="nav-drawer"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-drawer" id="nav-drawer"><a href="/use-cases/">Conductor Use Cases</a>
+      <a href="https://docs.conductor-oss.org/index.html" target="_blank"
+        >Docs</a
+      >
+      <a
+        href="https://docs.conductor-oss.org/quickstart/index.html"
+        target="_blank"
+        >Quickstart</a
+      >
+      <a href="https://github.com/conductor-oss/conductor" target="_blank"
+        >Github</a
+      >
+      <a
+        href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+        target="_blank"
+        >Community</a
+      >
+    </div><main class="use-cases-page" id="main-content"><article class="company-page"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/use-cases/">All companies</a><span aria-hidden="true">/</span><span aria-current="page">Netflix</span></nav><header class="company-hero"><div class="brand-area"><img src="/assets/companies/netflix.webp" alt="Netflix logo" width="435" height="120" loading="eager" fetchpriority="high" decoding="async" class="brand-wide"></div><p class="company-industry">Media and Entertainment</p><h1>Netflix<span>Conductor use cases</span></h1><p class="company-intro">Conductor coordinates studio media processing, advertising, game distribution and internal business workflows across Netflix’s services.</p><ul class="company-topics" aria-label="Use-case categories"><li><a href="/use-cases/?category=Document%20and%20Content%20Processing">Document and Content Processing</a></li><li><a href="/use-cases/?category=Marketing%20and%20Sales%20Operations">Marketing and Sales Operations</a></li><li><a href="/use-cases/?category=Risk%20and%20Compliance">Risk and Compliance</a></li><li><a href="/use-cases/?category=Data%20Integration">Data Integration</a></li><li><a href="/use-cases/?category=Software%20Delivery">Software Delivery</a></li><li><a href="/use-cases/?category=Process%20Automation">Process Automation</a></li></ul></header><nav class="case-contents" aria-labelledby="contents-title"><h2 id="contents-title">Explore 7 use cases</h2><ol><li><a href="#studio-media-processing">Studio media processing</a></li><li><a href="#advertising-creative-ingestion">Advertising creative ingestion</a></li><li><a href="#advertiser-certificate-management">Advertiser certificate management</a></li><li><a href="#data-clean-room-lifecycle">Data clean room lifecycle</a></li><li><a href="#game-distribution">Game distribution</a></li><li><a href="#promotional-artwork-production">Promotional artwork production</a></li><li><a href="#self-service-business-workflows">Self service business workflows</a></li></ol></nav><div class="company-cases"><section class="case-detail" id="studio-media-processing" aria-labelledby="studio-media-processing-title"><span class="anchor-alias" id="use-case-1" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Document and Content Processing</p></div><h2 id="studio-media-processing-title">Studio media processing</h2><p>Netflix uses its internal Conductor platform to coordinate footage ingestion, validation and transcoding, connecting dailies, visual-effects pulls and conform pulls with studio production workflows.</p></section><section class="case-detail" id="advertising-creative-ingestion" aria-labelledby="advertising-creative-ingestion-title"><span class="anchor-alias" id="use-case-2" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Marketing and Sales Operations</p></div><h2 id="advertising-creative-ingestion-title">Advertising creative ingestion</h2><p>Conductor coordinates advertising-creative ingestion, sequencing processing for each creative and managing branching workflows across the services involved.</p></section><section class="case-detail" id="advertiser-certificate-management" aria-labelledby="advertiser-certificate-management-title"><span class="anchor-alias" id="use-case-3" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Risk and Compliance</p></div><h2 id="advertiser-certificate-management-title">Advertiser certificate management</h2><p>Conductor coordinates advertiser-certificate workflows, connecting integrations with downstream actions when certificates expire.</p></section><section class="case-detail" id="data-clean-room-lifecycle" aria-labelledby="data-clean-room-lifecycle-title"><span class="anchor-alias" id="use-case-4" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Data Integration</p></div><h2 id="data-clean-room-lifecycle-title">Data clean room lifecycle</h2><p>Conductor manages the lifecycle of data clean rooms, coordinating provisioning, partner participation, activation and archival for joint analysis.</p></section><section class="case-detail" id="game-distribution" aria-labelledby="game-distribution-title"><span class="anchor-alias" id="use-case-5" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Software Delivery</p></div><h2 id="game-distribution-title">Game distribution</h2><p>Conductor coordinates partner game builds from ingestion and validation through app-store publishing, including processing associated with iOS privacy manifests.</p></section><section class="case-detail" id="promotional-artwork-production" aria-labelledby="promotional-artwork-production-title"><span class="anchor-alias" id="use-case-6" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Document and Content Processing</p></div><h2 id="promotional-artwork-production-title">Promotional artwork production</h2><p>Conductor coordinates candidate-image selection, processing and review for promotional artwork. The workflow connects video assets with image preparation and title placement, then brings producers into the approval process.</p></section><section class="case-detail" id="self-service-business-workflows" aria-labelledby="self-service-business-workflows-title"><span class="anchor-alias" id="use-case-7" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Process Automation</p></div><h2 id="self-service-business-workflows-title">Self service business workflows</h2><p>Netflix’s finance engineering team built tooling around Conductor so other teams could create and share workflows that connect people and automated services.</p></section></div><aside class="company-next" aria-label="Related resources"><a class="related-pattern" href="https://docs.conductor-oss.org/devguide/cookbook/microservice-orchestration.html">Explore related Conductor patterns <span aria-hidden="true">→</span></a></aside><a class="back-link" href="/use-cases/">← Explore all companies</a></article></main><footer class="footer">
+      <div class="wrap">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <img
+              class="footer-logo logo-img"
+              src="/assets/logo-conductor.webp" width="440" height="94"
+              alt="Conductor"
+            />
+            <p class="footer-tagline">
+              Open Source Workflow and Agent Orchestration Platform
+            </p>
+            <p class="footer-copy">
+              Copyright 2026 © Conductor OSS Contributors
+            </p>
+          </div>
+
+          <div class="footer-cols">
+            <div class="footer-col">
+              <div class="footer-col-head">Resources</div>
+              <a
+                href="https://docs.conductor-oss.org/index.html"
+                target="_blank"
+                >Docs</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/releases"
+                target="_blank"
+                >Releases</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/security/policy"
+                target="_blank"
+                >Security</a
+              >
+              <a href="https://orkes.io/privacy-policy" target="_blank"
+                >Privacy Policy</a
+              >
+              <a href="https://orkes.io/legal" target="_blank">Terms of Use</a>
+            </div>
+            <div class="footer-col">
+              <div class="footer-col-head">Community</div>
+              <a
+                href="https://github.com/conductor-oss/conductor"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/discussions"
+                target="_blank"
+                >Discussions</a
+              >
+              <a
+                href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+                target="_blank"
+                >Slack</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/blob/main/CONTRIBUTING.md"
+                target="_blank"
+                >Contributing</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-end">
+          Originally created at Netflix. Maintained in the open by the Conductor
+          OSS community.
+        </div>
+      </div>
+    </footer><div
+      class="modal-bg"
+      id="modal-bg"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <div class="modal">
+        <button class="modal-x" id="modal-x" aria-label="Close">&times;</button>
+        <h2 class="modal-title" id="modal-title">Get Involved</h2>
+        <p class="modal-copy">
+          Conductor is maintained in the open. Use the links below to contribute
+          code, ask questions, report issues, or review project policies.
+        </p>
+        <div class="modal-links">
+          <a
+            class="modal-link"
+            href="https://github.com/conductor-oss/conductor/blob/main/CONTRIBUTING.md"
+            target="_blank"
+          >
+            <span>
+              <strong>Contributing Guide</strong>
+              <span
+                >Development workflow, pull requests, and contribution
+                guidelines.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+          <a
+            class="modal-link"
+            href="https://github.com/conductor-oss/conductor/discussions"
+            target="_blank"
+          >
+            <span>
+              <strong>GitHub Discussions</strong>
+              <span
+                >Ask questions, propose ideas, and share patterns with the
+                community.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+          <a
+            class="modal-link"
+            href="https://github.com/conductor-oss/conductor/security/policy"
+            target="_blank"
+          >
+            <span>
+              <strong>Security Policy</strong>
+              <span
+                >Review the vulnerability reporting policy and security contact
+                path.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+          <a
+            class="modal-link"
+            href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+            target="_blank"
+          >
+            <span>
+              <strong>Slack Community</strong>
+              <span
+                >Join the public community chat for support and project
+                discussion.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div><script src="/assets/site.js?v=516614f1b720" defer></script></body></html>

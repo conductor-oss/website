@@ -1,0 +1,14 @@
+# Keep build sources out of the existing GitHub Pages root publication.
+exclude:
+  - data
+  - scripts
+  - templates
+  - dist
+  - node_modules
+  - package.json
+  - site.config.json
+  - README.md
+  - INTEGRATION.md
+  - QUALITY.md
+  - .openai
+  - .sites-runtime
