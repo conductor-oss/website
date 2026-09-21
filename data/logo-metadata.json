@@ -1,0 +1,1122 @@
+{
+  "assets/companies/24h-online-advertising.png": {
+    "src": "assets/companies/24h-online-advertising.webp",
+    "width": 261,
+    "height": 160
+  },
+  "assets/companies/6d-technologies.png": {
+    "src": "assets/companies/6d-technologies.webp",
+    "width": 480,
+    "height": 85
+  },
+  "assets/companies/abu-dhabi-commercial-bank.png": {
+    "src": "assets/companies/abu-dhabi-commercial-bank.webp",
+    "width": 267,
+    "height": 160
+  },
+  "assets/companies/abylle-solutions.png": {
+    "src": "assets/companies/abylle-solutions.webp",
+    "width": 480,
+    "height": 124
+  },
+  "assets/companies/accenture-unnamed-client.png": {
+    "src": "assets/companies/accenture-unnamed-client.webp",
+    "width": 64,
+    "height": 70
+  },
+  "assets/companies/acko.png": {
+    "src": "assets/companies/acko.webp",
+    "width": 480,
+    "height": 117
+  },
+  "assets/companies/adobe.png": {
+    "src": "assets/companies/adobe.webp",
+    "width": 46,
+    "height": 42
+  },
+  "assets/companies/adp.png": {
+    "src": "assets/companies/adp.webp",
+    "width": 100,
+    "height": 100
+  },
+  "assets/companies/airbus-defence-and-space.png": {
+    "src": "assets/companies/airbus-defence-and-space.webp",
+    "width": 480,
+    "height": 95
+  },
+  "assets/companies/airtel-africa-digital-labs.png": {
+    "src": "assets/companies/airtel-africa-digital-labs.webp",
+    "width": 480,
+    "height": 123
+  },
+  "assets/companies/airtel.png": {
+    "src": "assets/companies/airtel.webp",
+    "width": 480,
+    "height": 123
+  },
+  "assets/companies/align-technology.png": {
+    "src": "assets/companies/align-technology.webp",
+    "width": 410,
+    "height": 160
+  },
+  "assets/companies/allstate.png": {
+    "src": "assets/companies/allstate.webp",
+    "width": 150,
+    "height": 160
+  },
+  "assets/companies/amadeus.png": {
+    "src": "assets/companies/amadeus.webp",
+    "width": 480,
+    "height": 95
+  },
+  "assets/companies/amdocs.png": {
+    "src": "assets/companies/amdocs.webp",
+    "width": 100,
+    "height": 100
+  },
+  "assets/companies/american-express.png": {
+    "src": "assets/companies/american-express.webp",
+    "width": 480,
+    "height": 130
+  },
+  "assets/companies/amobee.png": {
+    "src": "assets/companies/amobee.webp",
+    "width": 480,
+    "height": 110
+  },
+  "assets/companies/appdirect.png": {
+    "src": "assets/companies/appdirect.webp",
+    "width": 172,
+    "height": 160
+  },
+  "assets/companies/arsys.png": {
+    "src": "assets/companies/arsys.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/asseco-data-systems.png": {
+    "src": "assets/companies/asseco-data-systems.webp",
+    "width": 283,
+    "height": 67
+  },
+  "assets/companies/at-bay.png": {
+    "src": "assets/companies/at-bay.webp",
+    "width": 281,
+    "height": 160
+  },
+  "assets/companies/atlassian.png": {
+    "src": "assets/companies/atlassian.webp",
+    "width": 480,
+    "height": 57
+  },
+  "assets/companies/atomiq.png": {
+    "src": "assets/companies/atomiq.webp",
+    "width": 480,
+    "height": 119
+  },
+  "assets/companies/avid.png": {
+    "src": "assets/companies/avid.webp",
+    "width": 480,
+    "height": 145
+  },
+  "assets/companies/axel-springer.png": {
+    "src": "assets/companies/axel-springer.webp",
+    "width": 163,
+    "height": 160
+  },
+  "assets/companies/b-labs.png": {
+    "src": "assets/companies/b-labs.webp",
+    "width": 100,
+    "height": 100
+  },
+  "assets/companies/banco-rci-brasil.png": {
+    "src": "assets/companies/banco-rci-brasil.webp",
+    "width": 74,
+    "height": 20
+  },
+  "assets/companies/bank-jago.png": {
+    "src": "assets/companies/bank-jago.webp",
+    "width": 23,
+    "height": 30
+  },
+  "assets/companies/baton-systems.png": {
+    "src": "assets/companies/baton-systems.webp",
+    "width": 480,
+    "height": 143
+  },
+  "assets/companies/bawag.png": {
+    "src": "assets/companies/bawag.webp",
+    "width": 76,
+    "height": 160
+  },
+  "assets/companies/bharatpe.png": {
+    "src": "assets/companies/bharatpe.webp",
+    "width": 76,
+    "height": 76
+  },
+  "assets/companies/blue-yonder.png": {
+    "src": "assets/companies/blue-yonder.webp",
+    "width": 480,
+    "height": 70
+  },
+  "assets/companies/boeing.png": {
+    "src": "assets/companies/boeing.webp",
+    "width": 480,
+    "height": 116
+  },
+  "assets/companies/booking-com.png": {
+    "src": "assets/companies/booking-com.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/broadcom.png": {
+    "src": "assets/companies/broadcom.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/bt-group.png": {
+    "src": "assets/companies/bt-group.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/btis.png": {
+    "src": "assets/companies/btis.webp",
+    "width": 343,
+    "height": 160
+  },
+  "assets/companies/byjus.png": {
+    "src": "assets/companies/byjus.webp",
+    "width": 480,
+    "height": 131
+  },
+  "assets/companies/california-community-colleges-technology-center.png": {
+    "src": "assets/companies/california-community-colleges-technology-center.webp",
+    "width": 197,
+    "height": 160
+  },
+  "assets/companies/capgemini.png": {
+    "src": "assets/companies/capgemini.webp",
+    "width": 480,
+    "height": 107
+  },
+  "assets/companies/carecloud.png": {
+    "src": "assets/companies/carecloud.webp",
+    "width": 480,
+    "height": 127
+  },
+  "assets/companies/celerdata.png": {
+    "src": "assets/companies/celerdata.webp",
+    "width": 480,
+    "height": 75
+  },
+  "assets/companies/cimpress.png": {
+    "src": "assets/companies/cimpress.webp",
+    "width": 480,
+    "height": 81
+  },
+  "assets/companies/cisco.png": {
+    "src": "assets/companies/cisco.webp",
+    "width": 302,
+    "height": 160
+  },
+  "assets/companies/citi.png": {
+    "src": "assets/companies/citi.webp",
+    "width": 238,
+    "height": 138
+  },
+  "assets/companies/clari.png": {
+    "src": "assets/companies/clari.webp",
+    "width": 188,
+    "height": 160
+  },
+  "assets/companies/codebusters.png": {
+    "src": "assets/companies/codebusters.webp",
+    "width": 100,
+    "height": 100
+  },
+  "assets/companies/cofense.png": {
+    "src": "assets/companies/cofense.webp",
+    "width": 480,
+    "height": 82
+  },
+  "assets/companies/cognite.png": {
+    "src": "assets/companies/cognite.webp",
+    "width": 245,
+    "height": 160
+  },
+  "assets/companies/cognitics.png": {
+    "src": "assets/companies/cognitics.webp",
+    "width": 480,
+    "height": 81
+  },
+  "assets/companies/cognizant-unnamed-banking-client.png": {
+    "src": "assets/companies/cognizant-unnamed-banking-client.webp",
+    "width": 76,
+    "height": 64
+  },
+  "assets/companies/cognyte.png": {
+    "src": "assets/companies/cognyte.webp",
+    "width": 100,
+    "height": 100
+  },
+  "assets/companies/cogoport.png": {
+    "src": "assets/companies/cogoport.webp",
+    "width": 320,
+    "height": 64
+  },
+  "assets/companies/collective.png": {
+    "src": "assets/companies/collective.webp",
+    "width": 480,
+    "height": 117
+  },
+  "assets/companies/comcast.png": {
+    "src": "assets/companies/comcast.webp",
+    "width": 405,
+    "height": 160
+  },
+  "assets/companies/commotion.png": {
+    "src": "assets/companies/commotion.webp",
+    "width": 480,
+    "height": 64
+  },
+  "assets/companies/commscope.png": {
+    "src": "assets/companies/commscope.webp",
+    "width": 32,
+    "height": 32
+  },
+  "assets/companies/contour-software-unnamed-client.png": {
+    "src": "assets/companies/contour-software-unnamed-client.webp",
+    "width": 341,
+    "height": 160
+  },
+  "assets/companies/coupang.png": {
+    "src": "assets/companies/coupang.webp",
+    "width": 480,
+    "height": 109
+  },
+  "assets/companies/credex-technology.png": {
+    "src": "assets/companies/credex-technology.webp",
+    "width": 384,
+    "height": 153
+  },
+  "assets/companies/credit-agricole.png": {
+    "src": "assets/companies/credit-agricole.webp",
+    "width": 292,
+    "height": 114
+  },
+  "assets/companies/csssr.png": {
+    "src": "assets/companies/csssr.webp",
+    "width": 100,
+    "height": 100
+  },
+  "assets/companies/dataart-unnamed-client.png": {
+    "src": "assets/companies/dataart-unnamed-client.webp",
+    "width": 480,
+    "height": 87
+  },
+  "assets/companies/deeptek.png": {
+    "src": "assets/companies/deeptek.webp",
+    "width": 241,
+    "height": 160
+  },
+  "assets/companies/dell-technologies.png": {
+    "src": "assets/companies/dell-technologies.webp",
+    "width": 298,
+    "height": 38
+  },
+  "assets/companies/deutsche-telekom-digital-labs.png": {
+    "src": "assets/companies/deutsche-telekom-digital-labs.webp",
+    "width": 132,
+    "height": 160
+  },
+  "assets/companies/dexsys.png": {
+    "src": "assets/companies/dexsys.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/doane-university.png": {
+    "src": "assets/companies/doane-university.webp",
+    "width": 480,
+    "height": 118
+  },
+  "assets/companies/eagleview.png": {
+    "src": "assets/companies/eagleview.webp",
+    "width": 480,
+    "height": 51
+  },
+  "assets/companies/ebay.png": {
+    "src": "assets/companies/ebay.webp",
+    "width": 400,
+    "height": 160
+  },
+  "assets/companies/elixr-labs.png": {
+    "src": "assets/companies/elixr-labs.webp",
+    "width": 75,
+    "height": 94
+  },
+  "assets/companies/endpoint.png": {
+    "src": "assets/companies/endpoint.webp",
+    "width": 480,
+    "height": 103
+  },
+  "assets/companies/epam-unnamed-client.png": {
+    "src": "assets/companies/epam-unnamed-client.webp",
+    "width": 100,
+    "height": 100
+  },
+  "assets/companies/equals.png": {
+    "src": "assets/companies/equals.webp",
+    "width": 397,
+    "height": 160
+  },
+  "assets/companies/fairwork-consortium.png": {
+    "src": "assets/companies/fairwork-consortium.webp",
+    "width": 480,
+    "height": 105
+  },
+  "assets/companies/fanatics.png": {
+    "src": "assets/companies/fanatics.webp",
+    "width": 86,
+    "height": 73
+  },
+  "assets/companies/first-international-bank-and-trust.png": {
+    "src": "assets/companies/first-international-bank-and-trust.webp",
+    "width": 171,
+    "height": 160
+  },
+  "assets/companies/florence-healthcare.png": {
+    "src": "assets/companies/florence-healthcare.webp",
+    "width": 480,
+    "height": 153
+  },
+  "assets/companies/florida-blue.png": {
+    "src": "assets/companies/florida-blue.webp",
+    "width": 300,
+    "height": 160
+  },
+  "assets/companies/foursys-unnamed-banking-client.png": {
+    "src": "assets/companies/foursys-unnamed-banking-client.webp",
+    "width": 480,
+    "height": 148
+  },
+  "assets/companies/foxtel.png": {
+    "src": "assets/companies/foxtel.webp",
+    "width": 480,
+    "height": 98
+  },
+  "assets/companies/fpl-technologies.png": {
+    "src": "assets/companies/fpl-technologies.webp",
+    "width": 281,
+    "height": 160
+  },
+  "assets/companies/freshworks.png": {
+    "src": "assets/companies/freshworks.webp",
+    "width": 480,
+    "height": 96
+  },
+  "assets/companies/frinx.png": {
+    "src": "assets/companies/frinx.webp",
+    "width": 480,
+    "height": 111
+  },
+  "assets/companies/ftd.png": {
+    "src": "assets/companies/ftd.webp",
+    "width": 380,
+    "height": 160
+  },
+  "assets/companies/gazprombank.png": {
+    "src": "assets/companies/gazprombank.webp",
+    "width": 480,
+    "height": 60
+  },
+  "assets/companies/ge-healthcare.png": {
+    "src": "assets/companies/ge-healthcare.webp",
+    "width": 480,
+    "height": 107
+  },
+  "assets/companies/globys.png": {
+    "src": "assets/companies/globys.webp",
+    "width": 143,
+    "height": 160
+  },
+  "assets/companies/grupo-boticario.png": {
+    "src": "assets/companies/grupo-boticario.webp",
+    "width": 34,
+    "height": 48
+  },
+  "assets/companies/hampden-bank-uk.png": {
+    "src": "assets/companies/hampden-bank-uk.webp",
+    "width": 163,
+    "height": 160
+  },
+  "assets/companies/hewlett-packard-enterprise.png": {
+    "src": "assets/companies/hewlett-packard-enterprise.webp",
+    "width": 412,
+    "height": 160
+  },
+  "assets/companies/hilton.png": {
+    "src": "assets/companies/hilton.webp",
+    "width": 480,
+    "height": 114
+  },
+  "assets/companies/huawei.png": {
+    "src": "assets/companies/huawei.webp",
+    "width": 212,
+    "height": 160
+  },
+  "assets/companies/hyperbots.png": {
+    "src": "assets/companies/hyperbots.webp",
+    "width": 177,
+    "height": 160
+  },
+  "assets/companies/ibm-clearleap.png": {
+    "src": "assets/companies/ibm-clearleap.webp",
+    "width": 427,
+    "height": 160
+  },
+  "assets/companies/ibm-watson-media.png": {
+    "src": "assets/companies/ibm-watson-media.webp",
+    "width": 427,
+    "height": 160
+  },
+  "assets/companies/ibm.png": {
+    "src": "assets/companies/ibm.webp",
+    "width": 427,
+    "height": 160
+  },
+  "assets/companies/in2it-technologies.png": {
+    "src": "assets/companies/in2it-technologies.webp",
+    "width": 111,
+    "height": 100
+  },
+  "assets/companies/infinite-computer-solutions.png": {
+    "src": "assets/companies/infinite-computer-solutions.webp",
+    "width": 88,
+    "height": 79
+  },
+  "assets/companies/intellect-design-arena.png": {
+    "src": "assets/companies/intellect-design-arena.webp",
+    "width": 480,
+    "height": 154
+  },
+  "assets/companies/invitae.png": {
+    "src": "assets/companies/invitae.webp",
+    "width": 480,
+    "height": 57
+  },
+  "assets/companies/issoft-unnamed-advertising-client.png": {
+    "src": "assets/companies/issoft-unnamed-advertising-client.webp",
+    "width": 88,
+    "height": 88
+  },
+  "assets/companies/jamuna-bank.png": {
+    "src": "assets/companies/jamuna-bank.webp",
+    "width": 139,
+    "height": 138
+  },
+  "assets/companies/jpmorgan-chase.png": {
+    "src": "assets/companies/jpmorgan-chase.webp",
+    "width": 480,
+    "height": 68
+  },
+  "assets/companies/kayo-sports.png": {
+    "src": "assets/companies/kayo-sports.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/keller-williams.png": {
+    "src": "assets/companies/keller-williams.webp",
+    "width": 334,
+    "height": 160
+  },
+  "assets/companies/keyvalue-software-systems.png": {
+    "src": "assets/companies/keyvalue-software-systems.webp",
+    "width": 480,
+    "height": 103
+  },
+  "assets/companies/kotak-life.png": {
+    "src": "assets/companies/kotak-life.webp",
+    "width": 211,
+    "height": 160
+  },
+  "assets/companies/legitmark.png": {
+    "src": "assets/companies/legitmark.webp",
+    "width": 480,
+    "height": 100
+  },
+  "assets/companies/lifepal.png": {
+    "src": "assets/companies/lifepal.webp",
+    "width": 474,
+    "height": 160
+  },
+  "assets/companies/linkedin.png": {
+    "src": "assets/companies/linkedin.webp",
+    "width": 480,
+    "height": 122
+  },
+  "assets/companies/lumen-technologies.png": {
+    "src": "assets/companies/lumen-technologies.webp",
+    "width": 480,
+    "height": 66
+  },
+  "assets/companies/macquarie-group.png": {
+    "src": "assets/companies/macquarie-group.webp",
+    "width": 480,
+    "height": 92
+  },
+  "assets/companies/march-networks.png": {
+    "src": "assets/companies/march-networks.webp",
+    "width": 185,
+    "height": 160
+  },
+  "assets/companies/marlabs-for-tracfone-wireless.png": {
+    "src": "assets/companies/marlabs-for-tracfone-wireless.webp",
+    "width": 480,
+    "height": 124
+  },
+  "assets/companies/marsie.png": {
+    "src": "assets/companies/marsie.webp",
+    "width": 480,
+    "height": 117
+  },
+  "assets/companies/medallia.png": {
+    "src": "assets/companies/medallia.webp",
+    "width": 480,
+    "height": 114
+  },
+  "assets/companies/mediactive-group.png": {
+    "src": "assets/companies/mediactive-group.webp",
+    "width": 480,
+    "height": 152
+  },
+  "assets/companies/medirect.png": {
+    "src": "assets/companies/medirect.webp",
+    "width": 480,
+    "height": 119
+  },
+  "assets/companies/mender-northern-tech.png": {
+    "src": "assets/companies/mender-northern-tech.webp",
+    "width": 480,
+    "height": 118
+  },
+  "assets/companies/mine.png": {
+    "src": "assets/companies/mine.webp",
+    "width": 91,
+    "height": 58
+  },
+  "assets/companies/mobile-world-investment-corporation.png": {
+    "src": "assets/companies/mobile-world-investment-corporation.webp",
+    "width": 131,
+    "height": 42
+  },
+  "assets/companies/mphasis-unnamed-client.png": {
+    "src": "assets/companies/mphasis-unnamed-client.webp",
+    "width": 465,
+    "height": 145
+  },
+  "assets/companies/munich-re.png": {
+    "src": "assets/companies/munich-re.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/natwest-group.png": {
+    "src": "assets/companies/natwest-group.webp",
+    "width": 141,
+    "height": 140
+  },
+  "assets/companies/naveo-commerce.png": {
+    "src": "assets/companies/naveo-commerce.webp",
+    "width": 480,
+    "height": 68
+  },
+  "assets/companies/nep-netherlands.png": {
+    "src": "assets/companies/nep-netherlands.webp",
+    "width": 430,
+    "height": 160
+  },
+  "assets/companies/netapp.png": {
+    "src": "assets/companies/netapp.webp",
+    "width": 480,
+    "height": 86
+  },
+  "assets/companies/netflix.png": {
+    "src": "assets/companies/netflix.webp",
+    "width": 435,
+    "height": 120
+  },
+  "assets/companies/netlight.png": {
+    "src": "assets/companies/netlight.webp",
+    "width": 480,
+    "height": 119
+  },
+  "assets/companies/newfront.png": {
+    "src": "assets/companies/newfront.webp",
+    "width": 480,
+    "height": 69
+  },
+  "assets/companies/nice-actimize.png": {
+    "src": "assets/companies/nice-actimize.webp",
+    "width": 480,
+    "height": 66
+  },
+  "assets/companies/nlb-digit.png": {
+    "src": "assets/companies/nlb-digit.webp",
+    "width": 271,
+    "height": 66
+  },
+  "assets/companies/normalyze.png": {
+    "src": "assets/companies/normalyze.webp",
+    "width": 480,
+    "height": 122
+  },
+  "assets/companies/ntt-data-services.png": {
+    "src": "assets/companies/ntt-data-services.webp",
+    "width": 480,
+    "height": 104
+  },
+  "assets/companies/nutanix.png": {
+    "src": "assets/companies/nutanix.webp",
+    "width": 232,
+    "height": 160
+  },
+  "assets/companies/omnilogic.png": {
+    "src": "assets/companies/omnilogic.webp",
+    "width": 100,
+    "height": 93
+  },
+  "assets/companies/opendoor.png": {
+    "src": "assets/companies/opendoor.webp",
+    "width": 480,
+    "height": 104
+  },
+  "assets/companies/openmf-mifos.png": {
+    "src": "assets/companies/openmf-mifos.webp",
+    "width": 256,
+    "height": 97
+  },
+  "assets/companies/oracle-financial-services.png": {
+    "src": "assets/companies/oracle-financial-services.webp",
+    "width": 252,
+    "height": 160
+  },
+  "assets/companies/oracle.png": {
+    "src": "assets/companies/oracle.webp",
+    "width": 252,
+    "height": 160
+  },
+  "assets/companies/panamax.png": {
+    "src": "assets/companies/panamax.webp",
+    "width": 210,
+    "height": 160
+  },
+  "assets/companies/payoneer.png": {
+    "src": "assets/companies/payoneer.webp",
+    "width": 480,
+    "height": 93
+  },
+  "assets/companies/paypal.png": {
+    "src": "assets/companies/paypal.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/paytm.png": {
+    "src": "assets/companies/paytm.webp",
+    "width": 400,
+    "height": 128
+  },
+  "assets/companies/perficient.png": {
+    "src": "assets/companies/perficient.webp",
+    "width": 100,
+    "height": 100
+  },
+  "assets/companies/perfios.png": {
+    "src": "assets/companies/perfios.webp",
+    "width": 480,
+    "height": 130
+  },
+  "assets/companies/philips.png": {
+    "src": "assets/companies/philips.webp",
+    "width": 129,
+    "height": 160
+  },
+  "assets/companies/pivotal.png": {
+    "src": "assets/companies/pivotal.webp",
+    "width": 100,
+    "height": 100
+  },
+  "assets/companies/pluto-tv.png": {
+    "src": "assets/companies/pluto-tv.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/preqin.png": {
+    "src": "assets/companies/preqin.webp",
+    "width": 474,
+    "height": 160
+  },
+  "assets/companies/primesoft-solutions-unnamed-client.png": {
+    "src": "assets/companies/primesoft-solutions-unnamed-client.webp",
+    "width": 229,
+    "height": 160
+  },
+  "assets/companies/product-live.png": {
+    "src": "assets/companies/product-live.webp",
+    "width": 192,
+    "height": 160
+  },
+  "assets/companies/productsup.png": {
+    "src": "assets/companies/productsup.webp",
+    "width": 98,
+    "height": 97
+  },
+  "assets/companies/profintech-technologies.png": {
+    "src": "assets/companies/profintech-technologies.webp",
+    "width": 480,
+    "height": 123
+  },
+  "assets/companies/quest-global.png": {
+    "src": "assets/companies/quest-global.webp",
+    "width": 423,
+    "height": 160
+  },
+  "assets/companies/radisys.png": {
+    "src": "assets/companies/radisys.webp",
+    "width": 480,
+    "height": 124
+  },
+  "assets/companies/rapidai.png": {
+    "src": "assets/companies/rapidai.webp",
+    "width": 367,
+    "height": 80
+  },
+  "assets/companies/rcg-global-services.png": {
+    "src": "assets/companies/rcg-global-services.webp",
+    "width": 98,
+    "height": 98
+  },
+  "assets/companies/redfin.png": {
+    "src": "assets/companies/redfin.webp",
+    "width": 128,
+    "height": 120
+  },
+  "assets/companies/relatient.png": {
+    "src": "assets/companies/relatient.webp",
+    "width": 480,
+    "height": 99
+  },
+  "assets/companies/reliaquest.png": {
+    "src": "assets/companies/reliaquest.webp",
+    "width": 480,
+    "height": 106
+  },
+  "assets/companies/rezgateway.png": {
+    "src": "assets/companies/rezgateway.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/ribbon-communications.png": {
+    "src": "assets/companies/ribbon-communications.webp",
+    "width": 389,
+    "height": 160
+  },
+  "assets/companies/rockefeller-capital-management.png": {
+    "src": "assets/companies/rockefeller-capital-management.webp",
+    "width": 480,
+    "height": 70
+  },
+  "assets/companies/routific.png": {
+    "src": "assets/companies/routific.webp",
+    "width": 480,
+    "height": 93
+  },
+  "assets/companies/samsung-sds.png": {
+    "src": "assets/companies/samsung-sds.webp",
+    "width": 31,
+    "height": 45
+  },
+  "assets/companies/sandia-national-laboratories.png": {
+    "src": "assets/companies/sandia-national-laboratories.webp",
+    "width": 394,
+    "height": 160
+  },
+  "assets/companies/santander.png": {
+    "src": "assets/companies/santander.webp",
+    "width": 40,
+    "height": 40
+  },
+  "assets/companies/sdt-client-via-act-digital.png": {
+    "src": "assets/companies/sdt-client-via-act-digital.webp",
+    "width": 100,
+    "height": 100
+  },
+  "assets/companies/sentisum.png": {
+    "src": "assets/companies/sentisum.webp",
+    "width": 163,
+    "height": 160
+  },
+  "assets/companies/sf-technology.png": {
+    "src": "assets/companies/sf-technology.webp",
+    "width": 90,
+    "height": 30
+  },
+  "assets/companies/simspace.png": {
+    "src": "assets/companies/simspace.webp",
+    "width": 480,
+    "height": 88
+  },
+  "assets/companies/smartbank.png": {
+    "src": "assets/companies/smartbank.webp",
+    "width": 66,
+    "height": 66
+  },
+  "assets/companies/smarte.png": {
+    "src": "assets/companies/smarte.webp",
+    "width": 163,
+    "height": 160
+  },
+  "assets/companies/snapcart.png": {
+    "src": "assets/companies/snapcart.webp",
+    "width": 259,
+    "height": 160
+  },
+  "assets/companies/solera.png": {
+    "src": "assets/companies/solera.webp",
+    "width": 480,
+    "height": 58
+  },
+  "assets/companies/solventum.png": {
+    "src": "assets/companies/solventum.webp",
+    "width": 480,
+    "height": 120
+  },
+  "assets/companies/spi-logistics.png": {
+    "src": "assets/companies/spi-logistics.webp",
+    "width": 118,
+    "height": 86
+  },
+  "assets/companies/spirent-communications.png": {
+    "src": "assets/companies/spirent-communications.webp",
+    "width": 396,
+    "height": 160
+  },
+  "assets/companies/state-of-maine-oit.png": {
+    "src": "assets/companies/state-of-maine-oit.webp",
+    "width": 480,
+    "height": 131
+  },
+  "assets/companies/steeleye.png": {
+    "src": "assets/companies/steeleye.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/stonex.png": {
+    "src": "assets/companies/stonex.webp",
+    "width": 480,
+    "height": 105
+  },
+  "assets/companies/strada.png": {
+    "src": "assets/companies/strada.webp",
+    "width": 157,
+    "height": 160
+  },
+  "assets/companies/stratiobd.png": {
+    "src": "assets/companies/stratiobd.webp",
+    "width": 419,
+    "height": 160
+  },
+  "assets/companies/summation.png": {
+    "src": "assets/companies/summation.webp",
+    "width": 480,
+    "height": 61
+  },
+  "assets/companies/swiggy.png": {
+    "src": "assets/companies/swiggy.webp",
+    "width": 109,
+    "height": 160
+  },
+  "assets/companies/synamedia.png": {
+    "src": "assets/companies/synamedia.webp",
+    "width": 52,
+    "height": 77
+  },
+  "assets/companies/t1.png": {
+    "src": "assets/companies/t1.webp",
+    "width": 188,
+    "height": 68
+  },
+  "assets/companies/tafi.png": {
+    "src": "assets/companies/tafi.webp",
+    "width": 366,
+    "height": 160
+  },
+  "assets/companies/tata-consultancy-services.png": {
+    "src": "assets/companies/tata-consultancy-services.webp",
+    "width": 68,
+    "height": 62
+  },
+  "assets/companies/tencent-music.png": {
+    "src": "assets/companies/tencent-music.webp",
+    "width": 441,
+    "height": 160
+  },
+  "assets/companies/tesla.png": {
+    "src": "assets/companies/tesla.webp",
+    "width": 480,
+    "height": 149
+  },
+  "assets/companies/tietoevry.png": {
+    "src": "assets/companies/tietoevry.webp",
+    "width": 100,
+    "height": 100
+  },
+  "assets/companies/timwetech.png": {
+    "src": "assets/companies/timwetech.webp",
+    "width": 340,
+    "height": 147
+  },
+  "assets/companies/torry-harris-unnamed-client.png": {
+    "src": "assets/companies/torry-harris-unnamed-client.webp",
+    "width": 84,
+    "height": 84
+  },
+  "assets/companies/totalsoft.png": {
+    "src": "assets/companies/totalsoft.webp",
+    "width": 211,
+    "height": 48
+  },
+  "assets/companies/truveta.png": {
+    "src": "assets/companies/truveta.webp",
+    "width": 480,
+    "height": 132
+  },
+  "assets/companies/tsmc.png": {
+    "src": "assets/companies/tsmc.webp",
+    "width": 211,
+    "height": 160
+  },
+  "assets/companies/twilio.png": {
+    "src": "assets/companies/twilio.webp",
+    "width": 155,
+    "height": 155
+  },
+  "assets/companies/uc-berkeley.png": {
+    "src": "assets/companies/uc-berkeley.webp",
+    "width": 480,
+    "height": 90
+  },
+  "assets/companies/uk-ministry-of-justice.png": {
+    "src": "assets/companies/uk-ministry-of-justice.webp",
+    "width": 72,
+    "height": 64
+  },
+  "assets/companies/unigroup.png": {
+    "src": "assets/companies/unigroup.webp",
+    "width": 225,
+    "height": 160
+  },
+  "assets/companies/united-wholesale-mortgage.png": {
+    "src": "assets/companies/united-wholesale-mortgage.webp",
+    "width": 342,
+    "height": 160
+  },
+  "assets/companies/university-of-coimbra-cisuc.png": {
+    "src": "assets/companies/university-of-coimbra-cisuc.webp",
+    "width": 480,
+    "height": 65
+  },
+  "assets/companies/university-of-phoenix.png": {
+    "src": "assets/companies/university-of-phoenix.webp",
+    "width": 136,
+    "height": 160
+  },
+  "assets/companies/uplynk.png": {
+    "src": "assets/companies/uplynk.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/upstox.png": {
+    "src": "assets/companies/upstox.webp",
+    "width": 480,
+    "height": 135
+  },
+  "assets/companies/verizon-wireless.png": {
+    "src": "assets/companies/verizon-wireless.webp",
+    "width": 134,
+    "height": 160
+  },
+  "assets/companies/viasat.png": {
+    "src": "assets/companies/viasat.webp",
+    "width": 227,
+    "height": 160
+  },
+  "assets/companies/vikki-bank-via-galaxy-finx.png": {
+    "src": "assets/companies/vikki-bank-via-galaxy-finx.webp",
+    "width": 429,
+    "height": 160
+  },
+  "assets/companies/virima.png": {
+    "src": "assets/companies/virima.webp",
+    "width": 188,
+    "height": 152
+  },
+  "assets/companies/vmware.png": {
+    "src": "assets/companies/vmware.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/walmart-global-tech.png": {
+    "src": "assets/companies/walmart-global-tech.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/warner-bros-discovery-and-istreamplanet.png": {
+    "src": "assets/companies/warner-bros-discovery-and-istreamplanet.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/wells-fargo.png": {
+    "src": "assets/companies/wells-fargo.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/wiley.png": {
+    "src": "assets/companies/wiley.webp",
+    "width": 100,
+    "height": 100
+  },
+  "assets/companies/wolken-software.png": {
+    "src": "assets/companies/wolken-software.webp",
+    "width": 389,
+    "height": 160
+  },
+  "assets/companies/wolters-kluwer.png": {
+    "src": "assets/companies/wolters-kluwer.webp",
+    "width": 480,
+    "height": 77
+  },
+  "assets/companies/woodside-energy.png": {
+    "src": "assets/companies/woodside-energy.webp",
+    "width": 199,
+    "height": 160
+  },
+  "assets/companies/yes4all.png": {
+    "src": "assets/companies/yes4all.webp",
+    "width": 160,
+    "height": 160
+  },
+  "assets/companies/zup-innovation.png": {
+    "src": "assets/companies/zup-innovation.webp",
+    "width": 467,
+    "height": 160
+  },
+  "assets/companies/ey-unnamed-client.jpg": {
+    "src": "assets/companies/ey-unnamed-client.webp",
+    "width": 240,
+    "height": 160
+  },
+  "assets/companies/netas.jpg": {
+    "src": "assets/companies/netas.webp",
+    "width": 480,
+    "height": 126
+  }
+}

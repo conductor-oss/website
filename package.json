@@ -1,0 +1,11 @@
+{
+  "name": "conductor-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs",
+    "check": "python3 scripts/check-content.py",
+    "prepare:static": "npm run build && node scripts/sync-static.mjs"
+  }
+}

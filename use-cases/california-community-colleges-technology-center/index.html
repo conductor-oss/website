@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>California Community Colleges Technology Center Conductor Use Cases | Workflow Orchestration</title><meta name="description" content="Explore California Community Colleges Technology Center Conductor use cases: admissions application delivery; identity status updates; fraud related integrations…"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://conductor-oss.org/use-cases/california-community-colleges-technology-center/"><meta property="og:type" content="website"><meta property="og:site_name" content="Conductor"><meta property="og:title" content="California Community Colleges Technology Center Conductor Use Cases | Workflow Orchestration"><meta property="og:description" content="Explore California Community Colleges Technology Center Conductor use cases: admissions application delivery; identity status updates; fraud related integrations…"><meta property="og:url" content="https://conductor-oss.org/use-cases/california-community-colleges-technology-center/"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="California Community Colleges Technology Center Conductor Use Cases | Workflow Orchestration"><meta name="twitter:description" content="Explore California Community Colleges Technology Center Conductor use cases: admissions application delivery; identity status updates; fraud related integrations…"><link rel="icon" href="/assets/icon-conductor-mark.svg" type="image/svg+xml"><link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/site.css?v=516614f1b720"><link rel="stylesheet" href="/use-cases/directory.css?v=516614f1b720"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://conductor-oss.org/use-cases/california-community-colleges-technology-center/","url":"https://conductor-oss.org/use-cases/california-community-colleges-technology-center/","name":"California Community Colleges Technology Center Conductor Use Cases | Workflow Orchestration","description":"Explore California Community Colleges Technology Center Conductor use cases: admissions application delivery; identity status updates; fraud related integrations…","inLanguage":"en","about":{"@type":"Organization","name":"California Community Colleges Technology Center","logo":"https://conductor-oss.org/assets/companies/california-community-colleges-technology-center.webp"},"keywords":["Education","Data Integration","Onboarding and Lifecycle Management","Risk and Compliance","Document and Content Processing"],"isPartOf":{"@id":"https://conductor-oss.org/use-cases/"},"breadcrumb":{"@id":"https://conductor-oss.org/use-cases/california-community-colleges-technology-center/#breadcrumb"},"mainEntity":{"@type":"ItemList","numberOfItems":4,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/california-community-colleges-technology-center/#admissions-application-delivery","url":"https://conductor-oss.org/use-cases/california-community-colleges-technology-center/#admissions-application-delivery","name":"Admissions application delivery","description":"SuperGlue uses Conductor to deliver CCCApply application records to college student information systems, including Banner and Colleague integrations. Workflow status also supports recovery when an application has not reached its destination.","keywords":["Data Integration"]}},{"@type":"ListItem","position":2,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/california-community-colleges-technology-center/#identity-status-updates","url":"https://conductor-oss.org/use-cases/california-community-colleges-technology-center/#identity-status-updates","name":"Identity status updates","description":"Conductor-based SuperGlue workflows coordinate OpenCCC identity-status updates, connecting identity information with participating college systems.","keywords":["Onboarding and Lifecycle Management"]}},{"@type":"ListItem","position":3,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/california-community-colleges-technology-center/#fraud-related-integrations","url":"https://conductor-oss.org/use-cases/california-community-colleges-technology-center/#fraud-related-integrations","name":"Fraud related integrations","description":"SuperGlue’s Conductor architecture supports fraud-related integration workflows alongside application delivery and identity services.","keywords":["Risk and Compliance"]}},{"@type":"ListItem","position":4,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/california-community-colleges-technology-center/#transcript-processing-and-placement","url":"https://conductor-oss.org/use-cases/california-community-colleges-technology-center/#transcript-processing-and-placement","name":"Transcript processing and placement","description":"Conductor coordinates microservices that process student transcripts and produce placement recommendations. The workflows connect transcript processing with college student information systems so that academic records can inform placement decisions.","keywords":["Document and Content Processing"]}}]}},{"@type":"BreadcrumbList","@id":"https://conductor-oss.org/use-cases/california-community-colleges-technology-center/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Conductor Use Cases","item":"https://conductor-oss.org/use-cases/"},{"@type":"ListItem","position":2,"name":"California Community Colleges Technology Center","item":"https://conductor-oss.org/use-cases/california-community-colleges-technology-center/"}]}]}</script></head><body><a class="skip-link" href="#main-content">Skip to content</a><nav class="nav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo" aria-label="Conductor OSS home">
+          <img
+            class="logo-img"
+            src="/assets/logo-conductor.webp" width="440" height="94"
+            alt="Conductor"
+          />
+        </a>
+
+        <div class="nav-links"><a class="nav-link current" href="/use-cases/" aria-current="page">Use Cases</a>
+          <a
+            class="nav-link"
+            href="https://docs.conductor-oss.org/index.html"
+            target="_blank"
+            >Docs</a
+          >
+          <a
+            class="nav-link"
+            href="https://docs.conductor-oss.org/quickstart/index.html"
+            target="_blank"
+            >Quickstart</a
+          >
+          <a
+            class="nav-link"
+            href="https://github.com/conductor-oss/conductor"
+            target="_blank"
+            >Github</a
+          >
+        </div>
+
+        <div class="nav-right">
+          <a
+            class="nav-community"
+            href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+            target="_blank"
+          >
+            <img src="/assets/icon-slack-nav.svg" alt="" />
+            Community
+          </a>
+
+
+
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle colour theme"
+          >
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+
+          <button class="btn btn-blue nav-contribute" id="open-modal">
+            <img src="/assets/icon-contribute.svg" alt="" />
+            <span>Contribute</span>
+          </button>
+
+          <button
+            class="burger"
+            id="burger"
+            aria-label="Menu" aria-controls="nav-drawer"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-drawer" id="nav-drawer"><a href="/use-cases/">Conductor Use Cases</a>
+      <a href="https://docs.conductor-oss.org/index.html" target="_blank"
+        >Docs</a
+      >
+      <a
+        href="https://docs.conductor-oss.org/quickstart/index.html"
+        target="_blank"
+        >Quickstart</a
+      >
+      <a href="https://github.com/conductor-oss/conductor" target="_blank"
+        >Github</a
+      >
+      <a
+        href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+        target="_blank"
+        >Community</a
+      >
+    </div><main class="use-cases-page" id="main-content"><article class="company-page"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/use-cases/">All companies</a><span aria-hidden="true">/</span><span aria-current="page">California Community Colleges Technology Center</span></nav><header class="company-hero"><div class="brand-area"><img src="/assets/companies/california-community-colleges-technology-center.webp" alt="California Community Colleges Technology Center logo" width="197" height="160" loading="eager" fetchpriority="high" decoding="async" class="brand-square"></div><p class="company-industry">Education</p><h1>California Community Colleges Technology Center<span>Conductor use cases</span></h1><p class="company-intro">SuperGlue uses Conductor to deliver CCCApply application records to college student information systems, including Banner and Colleague integrations. Workflow status also supports recovery when an application has not reached its destination.</p><ul class="company-topics" aria-label="Use-case categories"><li><a href="/use-cases/?category=Data%20Integration">Data Integration</a></li><li><a href="/use-cases/?category=Onboarding%20and%20Lifecycle%20Management">Onboarding and Lifecycle Management</a></li><li><a href="/use-cases/?category=Risk%20and%20Compliance">Risk and Compliance</a></li><li><a href="/use-cases/?category=Document%20and%20Content%20Processing">Document and Content Processing</a></li></ul></header><nav class="case-contents" aria-labelledby="contents-title"><h2 id="contents-title">Explore 4 use cases</h2><ol><li><a href="#admissions-application-delivery">Admissions application delivery</a></li><li><a href="#identity-status-updates">Identity status updates</a></li><li><a href="#fraud-related-integrations">Fraud related integrations</a></li><li><a href="#transcript-processing-and-placement">Transcript processing and placement</a></li></ol></nav><div class="company-cases"><section class="case-detail" id="admissions-application-delivery" aria-labelledby="admissions-application-delivery-title"><span class="anchor-alias" id="use-case-1" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Data Integration</p></div><h2 id="admissions-application-delivery-title">Admissions application delivery</h2><p>SuperGlue uses Conductor to deliver CCCApply application records to college student information systems, including Banner and Colleague integrations. Workflow status also supports recovery when an application has not reached its destination.</p></section><section class="case-detail" id="identity-status-updates" aria-labelledby="identity-status-updates-title"><span class="anchor-alias" id="use-case-2" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Onboarding and Lifecycle Management</p></div><h2 id="identity-status-updates-title">Identity status updates</h2><p>Conductor-based SuperGlue workflows coordinate OpenCCC identity-status updates, connecting identity information with participating college systems.</p></section><section class="case-detail" id="fraud-related-integrations" aria-labelledby="fraud-related-integrations-title"><span class="anchor-alias" id="use-case-3" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Risk and Compliance</p></div><h2 id="fraud-related-integrations-title">Fraud related integrations</h2><p>SuperGlue’s Conductor architecture supports fraud-related integration workflows alongside application delivery and identity services.</p></section><section class="case-detail" id="transcript-processing-and-placement" aria-labelledby="transcript-processing-and-placement-title"><span class="anchor-alias" id="use-case-4" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Document and Content Processing</p></div><h2 id="transcript-processing-and-placement-title">Transcript processing and placement</h2><p>Conductor coordinates microservices that process student transcripts and produce placement recommendations. The workflows connect transcript processing with college student information systems so that academic records can inform placement decisions.</p></section></div><aside class="company-next" aria-label="Related resources"><a class="related-pattern" href="https://docs.conductor-oss.org/devguide/cookbook/microservice-orchestration.html">Explore related Conductor patterns <span aria-hidden="true">→</span></a></aside><a class="back-link" href="/use-cases/">← Explore all companies</a></article></main><footer class="footer">
+      <div class="wrap">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <img
+              class="footer-logo logo-img"
+              src="/assets/logo-conductor.webp" width="440" height="94"
+              alt="Conductor"
+            />
+            <p class="footer-tagline">
+              Open Source Workflow and Agent Orchestration Platform
+            </p>
+            <p class="footer-copy">
+              Copyright 2026 © Conductor OSS Contributors
+            </p>
+          </div>
+
+          <div class="footer-cols">
+            <div class="footer-col">
+              <div class="footer-col-head">Resources</div>
+              <a
+                href="https://docs.conductor-oss.org/index.html"
+                target="_blank"
+                >Docs</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/releases"
+                target="_blank"
+                >Releases</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/security/policy"
+                target="_blank"
+                >Security</a
+              >
+              <a href="https://orkes.io/privacy-policy" target="_blank"
+                >Privacy Policy</a
+              >
+              <a href="https://orkes.io/legal" target="_blank">Terms of Use</a>
+            </div>
+            <div class="footer-col">
+              <div class="footer-col-head">Community</div>
+              <a
+                href="https://github.com/conductor-oss/conductor"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/discussions"
+                target="_blank"
+                >Discussions</a
+              >
+              <a
+                href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+                target="_blank"
+                >Slack</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/blob/main/CONTRIBUTING.md"
+                target="_blank"
+                >Contributing</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-end">
+          Originally created at Netflix. Maintained in the open by the Conductor
+          OSS community.
+        </div>
+      </div>
+    </footer><div
+      class="modal-bg"
+      id="modal-bg"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <div class="modal">
+        <button class="modal-x" id="modal-x" aria-label="Close">&times;</button>
+        <h2 class="modal-title" id="modal-title">Get Involved</h2>
+        <p class="modal-copy">
+          Conductor is maintained in the open. Use the links below to contribute
+          code, ask questions, report issues, or review project policies.
+        </p>
+        <div class="modal-links">
+          <a
+            class="modal-link"
+            href="https://github.com/conductor-oss/conductor/blob/main/CONTRIBUTING.md"
+            target="_blank"
+          >
+            <span>
+              <strong>Contributing Guide</strong>
+              <span
+                >Development workflow, pull requests, and contribution
+                guidelines.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+          <a
+            class="modal-link"
+            href="https://github.com/conductor-oss/conductor/discussions"
+            target="_blank"
+          >
+            <span>
+              <strong>GitHub Discussions</strong>
+              <span
+                >Ask questions, propose ideas, and share patterns with the
+                community.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+          <a
+            class="modal-link"
+            href="https://github.com/conductor-oss/conductor/security/policy"
+            target="_blank"
+          >
+            <span>
+              <strong>Security Policy</strong>
+              <span
+                >Review the vulnerability reporting policy and security contact
+                path.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+          <a
+            class="modal-link"
+            href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+            target="_blank"
+          >
+            <span>
+              <strong>Slack Community</strong>
+              <span
+                >Join the public community chat for support and project
+                discussion.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div><script src="/assets/site.js?v=516614f1b720" defer></script></body></html>

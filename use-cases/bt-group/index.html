@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BT Group Conductor Use Cases | Workflow Orchestration</title><meta name="description" content="Explore BT Group Conductor use cases: broadband checkout and fulfillment; returns across courier networks; subscription and insurance commerce; marketplace seller…"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="https://conductor-oss.org/use-cases/bt-group/"><meta property="og:type" content="website"><meta property="og:site_name" content="Conductor"><meta property="og:title" content="BT Group Conductor Use Cases | Workflow Orchestration"><meta property="og:description" content="Explore BT Group Conductor use cases: broadband checkout and fulfillment; returns across courier networks; subscription and insurance commerce; marketplace seller…"><meta property="og:url" content="https://conductor-oss.org/use-cases/bt-group/"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="BT Group Conductor Use Cases | Workflow Orchestration"><meta name="twitter:description" content="Explore BT Group Conductor use cases: broadband checkout and fulfillment; returns across courier networks; subscription and insurance commerce; marketplace seller…"><link rel="icon" href="/assets/icon-conductor-mark.svg" type="image/svg+xml"><link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/site.css?v=516614f1b720"><link rel="stylesheet" href="/use-cases/directory.css?v=516614f1b720"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://conductor-oss.org/use-cases/bt-group/","url":"https://conductor-oss.org/use-cases/bt-group/","name":"BT Group Conductor Use Cases | Workflow Orchestration","description":"Explore BT Group Conductor use cases: broadband checkout and fulfillment; returns across courier networks; subscription and insurance commerce; marketplace seller…","inLanguage":"en","about":{"@type":"Organization","name":"BT Group","logo":"https://conductor-oss.org/assets/companies/bt-group.webp"},"keywords":["Telecommunications","Orders and Fulfillment","Process Automation"],"isPartOf":{"@id":"https://conductor-oss.org/use-cases/"},"breadcrumb":{"@id":"https://conductor-oss.org/use-cases/bt-group/#breadcrumb"},"mainEntity":{"@type":"ItemList","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/bt-group/#broadband-checkout-and-fulfillment","url":"https://conductor-oss.org/use-cases/bt-group/#broadband-checkout-and-fulfillment","name":"Broadband checkout and fulfillment","description":"Conductor coordinates broadband checkout and fulfillment workflows, including Business in a Box services. The workflows connect customer orders with the services and customer-care tools that carry them forward.","keywords":["Orders and Fulfillment"]}},{"@type":"ListItem","position":2,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/bt-group/#returns-across-courier-networks","url":"https://conductor-oss.org/use-cases/bt-group/#returns-across-courier-networks","name":"Returns across courier networks","description":"Conductor connects return-processing services with multiple courier systems. Kafka events trigger and connect the asynchronous work required to manage different return scenarios.","keywords":["Orders and Fulfillment"]}},{"@type":"ListItem","position":3,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/bt-group/#subscription-and-insurance-commerce","url":"https://conductor-oss.org/use-cases/bt-group/#subscription-and-insurance-commerce","name":"Subscription and insurance commerce","description":"Conductor coordinates distributed services within a commerce platform for subscriptions and insurance. Shared workflow execution gives engineering teams visibility into progress and failures across participating services.","keywords":["Process Automation"]}},{"@type":"ListItem","position":4,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/bt-group/#marketplace-seller-and-order-workflows","url":"https://conductor-oss.org/use-cases/bt-group/#marketplace-seller-and-order-workflows","name":"Marketplace seller and order workflows","description":"Conductor coordinates seller onboarding, product, order and fulfillment services in BT's business marketplace environment. Conductor also forms part of the integration architecture for EE Consumer Marketplace.","keywords":["Orders and Fulfillment"]}},{"@type":"ListItem","position":5,"item":{"@type":"WebPageElement","@id":"https://conductor-oss.org/use-cases/bt-group/#event-driven-microservice-workflows","url":"https://conductor-oss.org/use-cases/bt-group/#event-driven-microservice-workflows","name":"Event-driven microservice workflows","description":"BT uses Conductor with Kafka to coordinate complex, event-driven workflows across microservices. The orchestration supports a distributed architecture developed as part of the company’s platform modernization.","keywords":["Process Automation"]}}]}},{"@type":"BreadcrumbList","@id":"https://conductor-oss.org/use-cases/bt-group/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Conductor Use Cases","item":"https://conductor-oss.org/use-cases/"},{"@type":"ListItem","position":2,"name":"BT Group","item":"https://conductor-oss.org/use-cases/bt-group/"}]}]}</script></head><body><a class="skip-link" href="#main-content">Skip to content</a><nav class="nav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo" aria-label="Conductor OSS home">
+          <img
+            class="logo-img"
+            src="/assets/logo-conductor.webp" width="440" height="94"
+            alt="Conductor"
+          />
+        </a>
+
+        <div class="nav-links"><a class="nav-link current" href="/use-cases/" aria-current="page">Use Cases</a>
+          <a
+            class="nav-link"
+            href="https://docs.conductor-oss.org/index.html"
+            target="_blank"
+            >Docs</a
+          >
+          <a
+            class="nav-link"
+            href="https://docs.conductor-oss.org/quickstart/index.html"
+            target="_blank"
+            >Quickstart</a
+          >
+          <a
+            class="nav-link"
+            href="https://github.com/conductor-oss/conductor"
+            target="_blank"
+            >Github</a
+          >
+        </div>
+
+        <div class="nav-right">
+          <a
+            class="nav-community"
+            href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+            target="_blank"
+          >
+            <img src="/assets/icon-slack-nav.svg" alt="" />
+            Community
+          </a>
+
+
+
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle colour theme"
+          >
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </button>
+
+          <button class="btn btn-blue nav-contribute" id="open-modal">
+            <img src="/assets/icon-contribute.svg" alt="" />
+            <span>Contribute</span>
+          </button>
+
+          <button
+            class="burger"
+            id="burger"
+            aria-label="Menu" aria-controls="nav-drawer"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-drawer" id="nav-drawer"><a href="/use-cases/">Conductor Use Cases</a>
+      <a href="https://docs.conductor-oss.org/index.html" target="_blank"
+        >Docs</a
+      >
+      <a
+        href="https://docs.conductor-oss.org/quickstart/index.html"
+        target="_blank"
+        >Quickstart</a
+      >
+      <a href="https://github.com/conductor-oss/conductor" target="_blank"
+        >Github</a
+      >
+      <a
+        href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+        target="_blank"
+        >Community</a
+      >
+    </div><main class="use-cases-page" id="main-content"><article class="company-page"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/use-cases/">All companies</a><span aria-hidden="true">/</span><span aria-current="page">BT Group</span></nav><header class="company-hero"><div class="brand-area"><img src="/assets/companies/bt-group.webp" alt="BT Group logo" width="160" height="160" loading="eager" fetchpriority="high" decoding="async" class="brand-square"></div><p class="company-industry">Telecommunications</p><h1>BT Group<span>Conductor use cases</span></h1><p class="company-intro">Conductor connects broadband fulfillment, marketplace services and return processing across courier integrations.</p><ul class="company-topics" aria-label="Use-case categories"><li><a href="/use-cases/?category=Orders%20and%20Fulfillment">Orders and Fulfillment</a></li><li><a href="/use-cases/?category=Process%20Automation">Process Automation</a></li></ul></header><nav class="case-contents" aria-labelledby="contents-title"><h2 id="contents-title">Explore 5 use cases</h2><ol><li><a href="#broadband-checkout-and-fulfillment">Broadband checkout and fulfillment</a></li><li><a href="#returns-across-courier-networks">Returns across courier networks</a></li><li><a href="#subscription-and-insurance-commerce">Subscription and insurance commerce</a></li><li><a href="#marketplace-seller-and-order-workflows">Marketplace seller and order workflows</a></li><li><a href="#event-driven-microservice-workflows">Event-driven microservice workflows</a></li></ol></nav><div class="company-cases"><section class="case-detail" id="broadband-checkout-and-fulfillment" aria-labelledby="broadband-checkout-and-fulfillment-title"><span class="anchor-alias" id="use-case-1" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Orders and Fulfillment</p></div><h2 id="broadband-checkout-and-fulfillment-title">Broadband checkout and fulfillment</h2><p>Conductor coordinates broadband checkout and fulfillment workflows, including Business in a Box services. The workflows connect customer orders with the services and customer-care tools that carry them forward.</p></section><section class="case-detail" id="returns-across-courier-networks" aria-labelledby="returns-across-courier-networks-title"><span class="anchor-alias" id="use-case-2" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Orders and Fulfillment</p></div><h2 id="returns-across-courier-networks-title">Returns across courier networks</h2><p>Conductor connects return-processing services with multiple courier systems. Kafka events trigger and connect the asynchronous work required to manage different return scenarios.</p></section><section class="case-detail" id="subscription-and-insurance-commerce" aria-labelledby="subscription-and-insurance-commerce-title"><span class="anchor-alias" id="use-case-3" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Process Automation</p></div><h2 id="subscription-and-insurance-commerce-title">Subscription and insurance commerce</h2><p>Conductor coordinates distributed services within a commerce platform for subscriptions and insurance. Shared workflow execution gives engineering teams visibility into progress and failures across participating services.</p></section><section class="case-detail" id="marketplace-seller-and-order-workflows" aria-labelledby="marketplace-seller-and-order-workflows-title"><span class="anchor-alias" id="use-case-4" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Orders and Fulfillment</p></div><h2 id="marketplace-seller-and-order-workflows-title">Marketplace seller and order workflows</h2><p>Conductor coordinates seller onboarding, product, order and fulfillment services in BT&#39;s business marketplace environment. Conductor also forms part of the integration architecture for EE Consumer Marketplace.</p></section><section class="case-detail" id="event-driven-microservice-workflows" aria-labelledby="event-driven-microservice-workflows-title"><span class="anchor-alias" id="use-case-5" aria-hidden="true"></span><div class="case-labels"><p class="case-category">Process Automation</p></div><h2 id="event-driven-microservice-workflows-title">Event-driven microservice workflows</h2><p>BT uses Conductor with Kafka to coordinate complex, event-driven workflows across microservices. The orchestration supports a distributed architecture developed as part of the company’s platform modernization.</p></section></div><aside class="company-next" aria-label="Related resources"><a class="related-pattern" href="https://docs.conductor-oss.org/devguide/cookbook/saga-compensation.html">Explore related Conductor patterns <span aria-hidden="true">→</span></a></aside><a class="back-link" href="/use-cases/">← Explore all companies</a></article></main><footer class="footer">
+      <div class="wrap">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <img
+              class="footer-logo logo-img"
+              src="/assets/logo-conductor.webp" width="440" height="94"
+              alt="Conductor"
+            />
+            <p class="footer-tagline">
+              Open Source Workflow and Agent Orchestration Platform
+            </p>
+            <p class="footer-copy">
+              Copyright 2026 © Conductor OSS Contributors
+            </p>
+          </div>
+
+          <div class="footer-cols">
+            <div class="footer-col">
+              <div class="footer-col-head">Resources</div>
+              <a
+                href="https://docs.conductor-oss.org/index.html"
+                target="_blank"
+                >Docs</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/releases"
+                target="_blank"
+                >Releases</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/security/policy"
+                target="_blank"
+                >Security</a
+              >
+              <a href="https://orkes.io/privacy-policy" target="_blank"
+                >Privacy Policy</a
+              >
+              <a href="https://orkes.io/legal" target="_blank">Terms of Use</a>
+            </div>
+            <div class="footer-col">
+              <div class="footer-col-head">Community</div>
+              <a
+                href="https://github.com/conductor-oss/conductor"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/discussions"
+                target="_blank"
+                >Discussions</a
+              >
+              <a
+                href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+                target="_blank"
+                >Slack</a
+              >
+              <a
+                href="https://github.com/conductor-oss/conductor/blob/main/CONTRIBUTING.md"
+                target="_blank"
+                >Contributing</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-end">
+          Originally created at Netflix. Maintained in the open by the Conductor
+          OSS community.
+        </div>
+      </div>
+    </footer><div
+      class="modal-bg"
+      id="modal-bg"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <div class="modal">
+        <button class="modal-x" id="modal-x" aria-label="Close">&times;</button>
+        <h2 class="modal-title" id="modal-title">Get Involved</h2>
+        <p class="modal-copy">
+          Conductor is maintained in the open. Use the links below to contribute
+          code, ask questions, report issues, or review project policies.
+        </p>
+        <div class="modal-links">
+          <a
+            class="modal-link"
+            href="https://github.com/conductor-oss/conductor/blob/main/CONTRIBUTING.md"
+            target="_blank"
+          >
+            <span>
+              <strong>Contributing Guide</strong>
+              <span
+                >Development workflow, pull requests, and contribution
+                guidelines.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+          <a
+            class="modal-link"
+            href="https://github.com/conductor-oss/conductor/discussions"
+            target="_blank"
+          >
+            <span>
+              <strong>GitHub Discussions</strong>
+              <span
+                >Ask questions, propose ideas, and share patterns with the
+                community.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+          <a
+            class="modal-link"
+            href="https://github.com/conductor-oss/conductor/security/policy"
+            target="_blank"
+          >
+            <span>
+              <strong>Security Policy</strong>
+              <span
+                >Review the vulnerability reporting policy and security contact
+                path.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+          <a
+            class="modal-link"
+            href="https://join.slack.com/t/orkes-conductor/shared_invite/zt-3dpcskdyd-W895bJDm8psAV7viYG3jFA"
+            target="_blank"
+          >
+            <span>
+              <strong>Slack Community</strong>
+              <span
+                >Join the public community chat for support and project
+                discussion.</span
+              >
+            </span>
+            <img class="arrow" src="/assets/icon-arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div><script src="/assets/site.js?v=516614f1b720" defer></script></body></html>
