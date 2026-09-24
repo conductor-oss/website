@@ -13,7 +13,7 @@
 .search-field svg{width:19px;height:19px;flex-shrink:0}
 .search-field input{min-width:0;width:100%;border:0;padding:13px 0;background:transparent;font:inherit;font-size:15px;color:var(--heading);outline:none}
 .search-field:focus-within{outline:2px solid var(--blue);outline-offset:2px}
-.category-select{background:var(--card);border:1px solid var(--border);border-radius:7px;color:var(--body);font:inherit;font-size:14px;min-height:47px;padding:0 34px 0 14px;max-width:290px}
+.category-select{background:var(--card);border:1px solid var(--border);border-radius:7px;color:var(--body);font:inherit;font-size:14px;min-height:47px;padding:0 34px 0 14px;max-width:290px;cursor:pointer}
 .result-count{margin-left:auto;font-size:14px;color:var(--muted);white-space:nowrap}
 .clear-filters{border:0;background:none;color:var(--blue);font:inherit;font-size:14px;text-decoration:underline;cursor:pointer;min-height:44px}
 .company-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}
@@ -118,3 +118,5 @@
 .case-labels .case-category{margin:0}
 .case-labels .case-area{font-size:12px;line-height:1.5;color:var(--muted);margin:0;font-weight:500}
 @media(max-width:540px){.case-contents{padding:22px}.case-contents ol{grid-template-columns:1fr}.company-topics a{font-size:12px}.case-labels{display:block}.case-labels .case-area{margin-top:6px}}
+.more-industries,.category-select{-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5l5 5 5-5' stroke='%2357637f' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;background-size:12px 8px;padding-right:44px}
+[data-theme="dark"] .more-industries,[data-theme="dark"] .category-select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5l5 5 5-5' stroke='%238592ab' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
