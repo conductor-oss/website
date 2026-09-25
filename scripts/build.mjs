@@ -7,6 +7,10 @@ const companies=JSON.parse(await fs.readFile(path.join(root,'data/companies.json
 const config=JSON.parse(await fs.readFile(path.join(root,'site.config.json'),'utf8'));
 const origin=(process.env.SITE_ORIGIN || config.origin).replace(/\/$/,'');
 if(!/^https?:\/\//.test(origin))throw new Error('SITE_ORIGIN must be an absolute HTTP(S) origin');
+// Where the primary (canonical) copy of these pages lives — orkes.io. Emitted as
+// <link rel="canonical"> so the OSS mirror doesn't duplicate-compete in search.
+const canonicalOrigin=(process.env.CANONICAL_ORIGIN || config.canonicalOrigin || 'https://orkes.io').replace(/\/$/,'');
+if(!/^https?:\/\//.test(canonicalOrigin))throw new Error('CANONICAL_ORIGIN must be an absolute HTTP(S) origin');
 const logos=JSON.parse(await fs.readFile(path.join(root,'data/logo-metadata.json'),'utf8'));
 const slugs=new Set();
 const names=new Set();
@@ -51,7 +55,7 @@ for(const file of ['assets/site.css','use-cases/directory.css']){
 const template=await fs.readFile(path.join(root,'templates/use-cases.html'),'utf8');
 const assetHash=createHash('sha256');
 for(const file of ['assets/site.css','assets/site.js','use-cases/directory.css','use-cases/directory.js'])assetHash.update(await fs.readFile(path.join(root,file)));
-const options={origin,logos,revision:assetHash.digest('hex').slice(0,12)};
+const options={origin,canonicalOrigin,logos,revision:assetHash.digest('hex').slice(0,12)};
 await fs.writeFile(path.join(root,'dist/use-cases/index.html'),renderDirectory(template,companies,options));
 for(const company of companies){
  const directory=path.join(root,'dist/use-cases',company.slug);
