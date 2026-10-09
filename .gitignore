@@ -3,3 +3,8 @@ dist/
 node_modules/
 .openai/
 .sites-runtime/
+
+# Use-case directory data is fetched from orkes.io at build (scripts/fetch-data.mjs);
+# it is generated, not a committed copy. See the single-source proposal/ADR.
+data/companies.json
+data/logo-metadata.json

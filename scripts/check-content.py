@@ -27,7 +27,7 @@ class Page(HTMLParser):
 total_cases = 0
 descriptions = set()
 titles = set()
-pages = [('use-cases/index.html', None)] + [(f'use-cases/{c["slug"]}/index.html', c) for c in companies]
+pages = [('use-cases/index.html', None)] + [(f'use-cases/{c["slug"]}/index.html', c) for c in companies if c['cases']]
 for route, company in pages:
     page = Page()
     page.feed((DIST / route).read_text())
@@ -48,7 +48,7 @@ for route, company in pages:
                 target = target / 'index.html'
             assert target.exists(), f'Broken internal link: {route} -> {attrs[key]}'
     if company is None:
-        cards = [a for t, a in page.elements if a.get('class') == 'company-card']
+        cards = [a for t, a in page.elements if 'company-card' in a.get('class', '').split()]
         assert len(cards) == len(companies), 'Missing directory company'
         assert all('hidden' not in card for card in cards), 'Company hidden in initial HTML'
     else:
@@ -67,7 +67,7 @@ for route, company in pages:
         total_cases += sum(t == 'section' and a.get('class') == 'case-detail' for t, a in page.elements)
 
 assert total_cases == sum(len(c['cases']) for c in companies)
-assert len(ET.parse(DIST / 'sitemap.xml').getroot()) == len(companies) + 2
+assert len(ET.parse(DIST / 'sitemap.xml').getroot()) == sum(1 for c in companies if c['cases']) + 2
 for file in ('robots.txt',):
     assert (DIST / file).exists(), file
 assert not (DIST / 'data').exists(), 'Build-time data must not be published'

@@ -3,6 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "fetch:data": "node scripts/fetch-data.mjs",
+    "prebuild": "node scripts/fetch-data.mjs",
     "build": "node scripts/build.mjs",
     "preview": "node scripts/serve.mjs",
     "check": "python3 scripts/check-content.py",
