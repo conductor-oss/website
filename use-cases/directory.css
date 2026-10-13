@@ -26,6 +26,9 @@
 .brand-text{font-size:26px;font-weight:650;line-height:1.15;letter-spacing:-.5px;text-align:center;color:var(--heading)}
 .company-name{text-align:center;font-size:14px;font-weight:500;line-height:1.5;min-height:34px;margin:0 0 14px;display:flex;align-items:center;justify-content:center}
 .card-copy{border-top:1px solid var(--border);padding-top:17px;flex:1}
+/* Logo-only companies: logo + name only, centred in the same card frame. */
+.company-card.logo-only{justify-content:center;padding-bottom:25px;gap:6px}
+.company-card.logo-only .company-name{margin-bottom:0}
 .company-industry{font-size:12px;line-height:1.45;font-weight:700;letter-spacing:.045em;text-transform:uppercase;min-height:30px;margin-bottom:6px;color:var(--heading)}
 .company-description{font-size:16px;line-height:1.75;color:var(--body);margin-bottom:22px}
 .case-button{font:inherit;display:flex;justify-content:space-between;align-items:center;width:calc(100% + 44px);margin-left:-22px;background:transparent;border:0;border-top:1px solid var(--border);padding:16px 22px;font-size:14px;font-weight:600;color:var(--blue);text-align:left;cursor:pointer;min-height:52px}

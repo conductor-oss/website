@@ -1,0 +1,71 @@
+name: Refresh use-cases from orkes.io
+
+# Single source of truth: the use-case directory is authored in the private
+# marketing-site repo and published on orkes.io. This repo keeps no committed
+# data copy — it fetches the canonical feed (scripts/fetch-data.mjs) and
+# regenerates the static pages, so the two sites cannot drift.
+#
+# Runs when orkes.io signals a directory change (repository_dispatch from the
+# marketing-site prod deploy), on demand, and when the renderer/templates/styles
+# change here. It regenerates the pre-rendered HTML and commits it, since GitHub
+# Pages serves the committed root files.
+
+on:
+  # Fired by marketing-site after a prod deploy that changed the use-case data.
+  repository_dispatch:
+    types: [use-cases-updated]
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "templates/**"
+      - "assets/**"
+      - "use-cases/directory.css"
+      - "use-cases/directory.js"
+      - "site.config.json"
+      - ".github/workflows/refresh-use-cases.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-use-cases
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Fetch the canonical data + logos from orkes.io, build, and validate.
+      # `prebuild` runs fetch-data.mjs; DATA_ORIGIN defaults to https://orkes.io.
+      - name: Build (fetches data + logos)
+        run: npm run build
+
+      - name: Audit generated site
+        run: npm run check
+
+      - name: Sync pre-rendered pages into the repo root
+        run: node scripts/sync-static.mjs
+
+      - name: Commit regenerated pages if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No changes — OSS already matches orkes.io."
+          else
+            git commit -m "chore: refresh use-cases from orkes.io [skip ci]"
+            git push
+          fi

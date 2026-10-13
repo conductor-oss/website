@@ -16,27 +16,37 @@ const slugs=new Set();
 const names=new Set();
 const normalizeName=value=>value.normalize('NFKC').toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
 for(const c of companies){
- if(!c.name||!c.industry||!c.summary||!c.cases.length||!/^[-a-z0-9]+$/.test(c.slug)||slugs.has(c.slug))throw new Error('Invalid company '+c.name);
+ const logoOnly=!c.cases.length;
+ if(!c.name||!c.industry||!/^[-a-z0-9]+$/.test(c.slug)||slugs.has(c.slug))throw new Error('Invalid company '+c.name);
+ if(!logoOnly&&!c.summary)throw new Error('Company missing summary '+c.name);
  slugs.add(c.slug);
  for(const name of [c.name,...(c.aliases||[])]){
   const normalized=normalizeName(name);
   if(names.has(normalized))throw new Error('Duplicate company or alias: '+name);
   names.add(normalized);
  }
- if(c.logo)await fs.access(path.join(root,c.logo));
- if(c.logo && !logos[c.logo])throw new Error('Missing optimized logo '+c.name);
+ // The optimized .webp (from logo-metadata) must exist; the source .png is optional,
+ // so additions synced as .webp only still pass.
+ if(c.logo){
+  if(!logos[c.logo])throw new Error('Missing optimized logo '+c.name);
+  await fs.access(path.join(root,logos[c.logo].src));
+ }
  for(const u of c.cases)if(!u.title||!u.description||!u.category)throw new Error('Incomplete use case '+c.name);
 }
 // Keep every published company URL working, including already consolidated names.
 const redirects=[['/powered-by','/use-cases/'],['/powered-by/','/use-cases/'],['/powered-by/index.html','/use-cases/'],['/use-cases','/use-cases/']];
 const companyRedirects=(from,to)=>redirects.push([from,to],[from+'/',to],[from+'/index.html',to]);
-for(const c of companies)companyRedirects(`/powered-by/${c.slug}`,`/use-cases/${c.slug}/`);
+for(const c of companies)if(c.cases.length)companyRedirects(`/powered-by/${c.slug}`,`/use-cases/${c.slug}/`);
 for(const asset of ['directory.css','directory.js'])redirects.push([`/powered-by/${asset}`,`/use-cases/${asset}`]);
 for(const c of companies)for(const previous of c.previousSlugs||[]){
  if(!/^[-a-z0-9]+$/.test(previous)||slugs.has(previous))throw new Error('Duplicate company route: '+previous);
  slugs.add(previous);
  for(const prefix of ['powered-by','use-cases'])companyRedirects(`/${prefix}/${previous}`,`/use-cases/${c.slug}/`);
 }
+//companies removed from the directory: their detail pages
+// are gone — 301 the old URLs back to the directory.
+const removedSlugs=['gazprombank','home-credit-russia','cognyte'];
+for(const slug of removedSlugs)for(const prefix of ['powered-by','use-cases'])companyRedirects(`/${prefix}/${slug}`,'/use-cases/');
 const forbidden=['"person_ids"','linkedin.com/in/','"baseline_case_ids"','"source_archive"','"token"','"confidence_score"'];
 const data=await fs.readFile(path.join(root,'data/companies.json'),'utf8');
 for(const key of forbidden)if(data.includes(key))throw new Error('Private data field in public dataset: '+key);
@@ -58,6 +68,7 @@ for(const file of ['assets/site.css','assets/site.js','use-cases/directory.css',
 const options={origin,canonicalOrigin,logos,revision:assetHash.digest('hex').slice(0,12)};
 await fs.writeFile(path.join(root,'dist/use-cases/index.html'),renderDirectory(template,companies,options));
 for(const company of companies){
+ if(!company.cases.length)continue; // logo-only: card on the directory, but no detail page
  const directory=path.join(root,'dist/use-cases',company.slug);
  await fs.mkdir(directory,{recursive:true});
  await fs.writeFile(path.join(directory,'index.html'),renderCompany(template,company,options));
@@ -69,14 +80,17 @@ const movedPages=[];
 for(const c of companies){
  for(const previous of c.previousSlugs||[])movedPages.push([`use-cases/${previous}`,`/use-cases/${c.slug}/`]);
 }
+// Meta-refresh stubs for the removed sanctioned slugs (belt-and-braces with _redirects).
+for(const slug of removedSlugs)movedPages.push([`use-cases/${slug}`,'/use-cases/']);
 for(const [previous,destination] of movedPages){
  const directory=path.join(root,'dist',previous);
  await fs.mkdir(directory,{recursive:true});
  await fs.writeFile(path.join(directory,'index.html'),redirectPage(destination,origin));
 }
 await fs.writeFile(path.join(root,'dist/_redirects'),redirects.map(([from,to])=>`${from} ${to} 301`).join('\n')+'\n');
-const urls=['/','/use-cases/',...companies.map(c=>`/use-cases/${c.slug}/`)];
+const urls=['/','/use-cases/',...companies.filter(c=>c.cases.length).map(c=>`/use-cases/${c.slug}/`)];
 await fs.writeFile(path.join(root,'dist/sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+urls.map(p=>`<url><loc>${escape(origin+p)}</loc></url>`).join('')+'</urlset>\n');
 await fs.writeFile(path.join(root,'dist/robots.txt'),`User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`);
 await fs.writeFile(path.join(root,'dist/_headers'),'/assets/*\n  Cache-Control: public, max-age=604800\n/use-cases/*.css\n  Cache-Control: public, max-age=86400\n/use-cases/*.js\n  Cache-Control: public, max-age=86400\n');
-console.log(`Built ${companies.length} company pages and ${companies.reduce((n,c)=>n+c.cases.length,0)} use cases; readable HTML, structured metadata and sitemap.`);
+const withCases=companies.filter(c=>c.cases.length).length;
+console.log(`Built ${withCases} company pages (+${companies.length-withCases} logo-only cards) and ${companies.reduce((n,c)=>n+c.cases.length,0)} use cases; readable HTML, structured metadata and sitemap.`);
