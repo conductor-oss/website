@@ -64,7 +64,7 @@ for(const file of ['assets/site.css','use-cases/directory.css']){
 }
 const template=await fs.readFile(path.join(root,'templates/use-cases.html'),'utf8');
 const assetHash=createHash('sha256');
-for(const file of ['assets/site.css','assets/site.js','use-cases/directory.css','use-cases/directory.js'])assetHash.update(await fs.readFile(path.join(root,file)));
+for(const file of ['assets/site.css','assets/site.js','assets/analytics.js','use-cases/directory.css','use-cases/directory.js'])assetHash.update(await fs.readFile(path.join(root,file)));
 const options={origin,canonicalOrigin,logos,revision:assetHash.digest('hex').slice(0,12)};
 await fs.writeFile(path.join(root,'dist/use-cases/index.html'),renderDirectory(template,companies,options));
 for(const company of companies){
